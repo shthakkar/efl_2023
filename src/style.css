@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    margin: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #4caf50, #8bc34a);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #43a047, #7cb342);
+  }
+  
+  button:active {
+    background: linear-gradient(to right, #388e3c, #689f38);
+  }
+  

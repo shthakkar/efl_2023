@@ -1,0 +1,4572 @@
+[
+    {
+      "name": "Ruturaj Gaikwad",
+      "salary": "6.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "Prolific run-scorer at the top of the order ",
+        "Excellent timer of the ball, can switch gears comfortably ",
+        "Orange Cap winner in 2021, has great range of shots"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 600,
+      "eflBase": 100,
+      "rank": 64
+    },
+    {
+      "name": "Devon Conway",
+      "salary": "1.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Classy and stylish top-order batter ",
+        "Can switch gears swiftly, no real flaw in his batting ",
+        "Can keep wickets if needed"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 100,
+      "eflBase": 50,
+      "rank": 129
+    },
+    {
+      "name": "Subhranshu Senapati",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Sweet timer of the ball, plays elegant shots ",
+        " Leads Odisha in two formats ",
+        " Leading run-scorer of the side in Vijay Hazare Trophy 2021-22"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 183
+    },
+    {
+      "name": "Ajinkya Rahane",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "A conservative top-order batter ",
+        " Capable of holding an innings together ",
+        " Possesses solid tactical nous as a captain"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 152
+    },
+    {
+      "name": "Shaik Rasheed",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "A competent batter from the victorious U-19 India stable ",
+        " Has a solid base and can play anchor ",
+        " Scored a 50 in the U-19 WC final 2022"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 184
+    },
+    {
+      "name": "Maheesh Theekshana",
+      "salary": "70.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Mystery spinner - off-break, googly, carrom ball ",
+        "Joint highest wicket-taker in the 2021 Lanka Premier League"
+      ],
+      "country": "Sri Lanka",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 70,
+      "eflBase": 20,
+      "rank": 143
+    },
+    {
+      "name": "Rajvardhan Hangargekar",
+      "salary": "1.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Fiery fast-bowler who can clock 140+ kph ",
+        "Power-hitter, can be used as a finisher"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 150,
+      "eflBase": 50,
+      "rank": 119
+    },
+    {
+      "name": "Simarjeet Singh",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Tall, skiddy pacer who can bowl 140+ ",
+        " Was a net bowler with the Indian team and Delhi Capitals"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 185
+    },
+    {
+      "name": "Mukesh Choudhary",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Hit-the-deck left-arm pacer who can swing and seam the ball ",
+        " Leading wicket-taker for Maharashtra in Vijay Hazare Trophy, 2021-22"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 186
+    },
+    {
+      "name": "Prashant Solanki",
+      "salary": "1.20 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Right-arm leggie from Mumbai ",
+        " Varies pace and also bowls a good googly"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 120,
+      "eflBase": 50,
+      "rank": 126
+    },
+    {
+      "name": "Tushar Deshpande",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Capable of seaming and swinging the ball ",
+        " Can wield the long handle in the lower order ",
+        " Has a knack of picking crucial wickets"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 187
+    },
+    {
+      "name": "Deepak Chahar",
+      "salary": "14.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Swings the new ball both ways with control, bowls the knuckle ball ",
+        "Holds the record for most dots in an IPL innings (20) ",
+        "Capable of big hits in the lower-order"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1400,
+      "eflBase": 200,
+      "rank": 13
+    },
+    {
+      "name": "Matheesha Pathirana",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Malinga-like slingy pacer ",
+        " Has a deadly yorker ",
+        " Picked up Shubman Gill and Hardik Pandya in his debut IPL game"
+      ],
+      "country": "Sri Lanka",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 188
+    },
+    {
+      "name": "Ravindra Jadeja",
+      "salary": "16.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "Clean-hitter, finisher ",
+        "Lethal on spin-friendly pitches, utility bowler ",
+        "One of the best fielders in the world"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1600,
+      "eflBase": 200,
+      "rank": 5
+    },
+    {
+      "name": "Moeen Ali",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "Stylish batter, one of the sweetest timers of the ball ",
+        "Excellent against spin, can bat at any position and take the game away from the opponents ",
+        "Handy and a clever off-spinner who can bowl in the powerplay and middle overs"
+      ],
+      "country": "England",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 41
+    },
+    {
+      "name": "Shivam Dube",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Powerful middle-order batsman ",
+        " Handy medium pacer ",
+        " A rare Indian seam-bowling all-rounder"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 80
+    },
+    {
+      "name": "Mitchell Santner",
+      "salary": "1.90 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Smart spinner, can bowl the carrom ball ",
+        "Handy batter in the lower-order, could be used as a pinch-hitter ",
+        "Outstanding fielder anywhere on the park"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 190,
+      "eflBase": 50,
+      "rank": 113
+    },
+    {
+      "name": "Dwaine Pretorius",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Has excellent variations to trouble batters, difficult to get away ",
+        " Assigned end overs pacer for South Africa ",
+        " Very handy with the bat too"
+      ],
+      "country": "South Africa",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 153
+    },
+    {
+      "name": "Ben Stokes",
+      "salary": "16.25 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "A world-class all-rounder, and a natural leader ",
+        " Has 2 IPL hundreds ",
+        " Can swing the ball at high pace, and has a sharp bumper"
+      ],
+      "country": "England",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1625,
+      "eflBase": 200,
+      "rank": 4
+    },
+    {
+      "name": "Nishant Sindhu",
+      "salary": "60.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Captained the WC winning U-19 India team ",
+        " Strong on anything short and wide ",
+        " Bowls handy left-arm orthodox"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 60,
+      "eflBase": 20,
+      "rank": 146
+    },
+    {
+      "name": "Kyle Jamieson",
+      "salary": "1.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "One of New Zealand's best all-rounder currently ",
+        " Bowls at high speed and generates extra bounce ",
+        " Best of 6/7 in T20s"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 100,
+      "eflBase": 50,
+      "rank": 130
+    },
+    {
+      "name": "Bhagath Varma",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Off-spinning right-handed all-rounder ",
+        " Part of 2021 IPL winning (CSK) squad ",
+        " Very good with the sweeps"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 189
+    },
+    {
+      "name": "Ajay Jadav Mandal",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Left-arm spin-bowling all-rounder ",
+        " Plays the finisher role with the bat ",
+        " Very economical with the ball"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 190
+    },
+    {
+      "name": "MS Dhoni",
+      "salary": "12.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "WK-Batter",
+      "intro": [
+        "Master tactician, led CSK to four IPL titles ",
+        "Power-hitter, incredibly quick between the wickets ",
+        "Lightning quick behind the stumps to spinners"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1200,
+      "eflBase": 200,
+      "rank": 17
+    },
+    {
+      "name": "Ambati Rayudu",
+      "salary": "6.75 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "WK-Batter",
+      "intro": [
+        "An aggressive batter, who usually bats in the middle-order, but can also open ",
+        "Excellent player against spin, known for counter-attacking play"
+      ],
+      "country": "India",
+      "iplTeam": "CSK",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 675,
+      "eflBase": 100,
+      "rank": 55
+    },
+    {
+      "name": "Virat Kohli",
+      "salary": "15.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Batter",
+      "intro": [
+        "Holds the record for most runs in an IPL season ",
+        "Only player to have featured for a single franchise ",
+        "Captained RCB to the 2016 final"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1500,
+      "eflBase": 200,
+      "rank": 10
+    },
+    {
+      "name": "Suyash Prabhudessai",
+      "salary": "30.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Innovative stroke-maker ",
+        " Consistent run-scorer in domestic cricket ",
+        " Can be a decent sixth-bowling option"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 30,
+      "eflBase": 20,
+      "rank": 177
+    },
+    {
+      "name": "Faf du Plessis",
+      "salary": "7.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "Solid top-order bat who can attack/anchor ",
+        "Big-match player, a calm leader, supremely fit ",
+        "Pulls off stunning catches very often, patrols high traffic zones"
+      ],
+      "country": "South Africa",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 700,
+      "eflBase": 100,
+      "rank": 53
+    },
+    {
+      "name": "Rajat Patidar",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Averages above 35 in T20s ",
+        " Smashed a 49-ball 100 in IPL 2022 eliminator ",
+        " Very strong against spin"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 191
+    },
+    {
+      "name": "Mohammed Siraj",
+      "salary": "7.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "An ever evolving fast bowler ",
+        "Skilled with the ability to make the ball talk ",
+        "Has improved on death overs bowling"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 700,
+      "eflBase": 100,
+      "rank": 54
+    },
+    {
+      "name": "Karn Sharma",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Has been part of four IPL winning teams - SRH (2016), MI (2017), CSK (2018, 2021) ",
+        "Can hit a few lusty blows batting in the lower-order ",
+        "Bowls both leg-spin and googly"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 154
+    },
+    {
+      "name": "Siddarth Kaul",
+      "salary": "75.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Skiddy new ball customer ",
+        " Handy at the death with his yorkers ",
+        " Has good variations and a well-disguised knuckle ball"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 75,
+      "eflBase": 20,
+      "rank": 138
+    },
+    {
+      "name": "Josh Hazlewood",
+      "salary": "7.75 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "Quality seam bowler, accuracy is his forte and can be deadly on spicy pitches ",
+        "Uses the slower balls to good effect ",
+        "Safe catcher and brilliant fielder in the deep"
+      ],
+      "country": "Australia",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 775,
+      "eflBase": 100,
+      "rank": 49
+    },
+    {
+      "name": "Harshal Patel",
+      "salary": "10.75 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Has one of the best economy during middle overs in IPL ",
+        " Purple Cap winner and has an IPL hat-trick ",
+        " Can contribute with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1075,
+      "eflBase": 200,
+      "rank": 22
+    },
+    {
+      "name": "Akash Deep",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Utility cricketer in all three departments ",
+        " Has the knack of breaking partnerships ",
+        " Handy batting option in the lower order"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 192
+    },
+    {
+      "name": "Reece Topley",
+      "salary": "1.90 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Creates problems with his height and left-arm angle ",
+        " Can bowl swing, equally effective at the death ",
+        " Averages 22 with the ball in T20s (131 games so far)"
+      ],
+      "country": "England",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 190,
+      "eflBase": 50,
+      "rank": 114
+    },
+    {
+      "name": "Rajan Kumar",
+      "salary": "70.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Hit-the-deck left-arm seamer ",
+        " Has a decent yorker ",
+        " Bowls majority of his overs in the powerplay"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 70,
+      "eflBase": 20,
+      "rank": 144
+    },
+    {
+      "name": "Avinash Singh",
+      "salary": "60.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Pacer from Jammu and Kashmir ",
+        " Bowls at a really high speed ",
+        " Impressed RCB during IPL trails"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 60,
+      "eflBase": 20,
+      "rank": 147
+    },
+    {
+      "name": "Himanshu Sharma",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Club cricketer from Rajasthan ",
+        " Developing leg spinner ",
+        " Can spin the ball both ways"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 193
+    },
+    {
+      "name": "Glenn Maxwell",
+      "salary": "11.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "Powerful striker of the ball ",
+        "Very strong against any kind of spin ",
+        "Versatile fielder and handy off-spinner"
+      ],
+      "country": "Australia",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1100,
+      "eflBase": 200,
+      "rank": 21
+    },
+    {
+      "name": "David Willey",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "New-ball specialist who can swing the ball considerably ",
+        " Powerhitter who can be used as a floater ",
+        " Can be used as a match-up against medium pace and spin bowling"
+      ],
+      "country": "England",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 105
+    },
+    {
+      "name": "Mahipal Lomror",
+      "salary": "95.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Aggressive middle-order batter ",
+        "Handy left-arm orthodox spinner who smartly varies his pace and trajectory"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 95,
+      "eflBase": 20,
+      "rank": 134
+    },
+    {
+      "name": "Shahbaz Ahmed",
+      "salary": "2.40 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Useful left-arm spinner ",
+        " Can bat as a floater ",
+        " Capable of clearing the boundary rope"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 240,
+      "eflBase": 50,
+      "rank": 101
+    },
+    {
+      "name": "Wanindu Hasaranga",
+      "salary": "10.75 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "A smart leg-spinner with exemplary control ",
+        "Has a dangerous googly ",
+        "Used in the middle-order by Sri Lanka"
+      ],
+      "country": "Sri Lanka",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1075,
+      "eflBase": 200,
+      "rank": 23
+    },
+    {
+      "name": "Manoj Bhandage",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Powerful left-handed finisher",
+        " Bowls right-arm medium pace, effective during middle overs",
+        " Bottom-hand dominant with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 194
+    },
+    {
+      "name": "Will Jacks",
+      "salary": "3.20 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Has played all around the franchise circuit ",
+        " A dasher with the bat who can exploit the field restrictions ",
+        " Handy with his off-break bowling"
+      ],
+      "country": "England",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 320,
+      "eflBase": 50,
+      "rank": 91
+    },
+    {
+      "name": "Sonu Yadav",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Part of the TNPL 2021 winning team ",
+        " Medium-pace bowling all-rounder ",
+        " Can be used as a finisher with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 195
+    },
+    {
+      "name": "Finn Allen",
+      "salary": "80.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Explosive top-order batter with a variety of shots ",
+        "Hits boundaries of fun, has a strike-rate in the excess of 170 in T20s ",
+        "Can keep wickets if needed"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 80,
+      "eflBase": 20,
+      "rank": 137
+    },
+    {
+      "name": "Anuj Rawat",
+      "salary": "3.40 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "WK-Batter",
+      "intro": [
+        "Attacking opener and a natural six-hitter ",
+        " Consistent run-scorer in the domestic circuit ",
+        " Tidy with the gloves behind the stumps"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 340,
+      "eflBase": 50,
+      "rank": 90
+    },
+    {
+      "name": "Dinesh Karthik",
+      "salary": "5.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "WK-Batter",
+      "intro": [
+        "Perfect fit for the finisher role ",
+        "Stays busy at the crease ",
+        "Arguably the most experienced keeper-captain in India after MSD"
+      ],
+      "country": "India",
+      "iplTeam": "RCB",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 550,
+      "eflBase": 50,
+      "rank": 69
+    },
+    {
+      "name": "Prithvi Shaw",
+      "salary": "7.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "Aggressive opening batter ",
+        "High on intent in the powerplay ",
+        "Has a touch of class and elegance in his strokeplay"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 750,
+      "eflBase": 100,
+      "rank": 51
+    },
+    {
+      "name": "Yash Dhull",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "A very technically correct player from Delhi ",
+        " Led India to a successful campaign in the U-19 WC ",
+        " Equally good against pace and spin"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 155
+    },
+    {
+      "name": "Rovman Powell",
+      "salary": "2.80 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Power-hitter, improved player against spin ",
+        "Notched up his maiden T20I hundred against England in January 2022 ",
+        "Handy medium-pacer"
+      ],
+      "country": "West Indies",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 280,
+      "eflBase": 50,
+      "rank": 96
+    },
+    {
+      "name": "Sarfaraz Khan",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "An innovative stroke-maker ",
+        " Can strike them big from ball one ",
+        " Has improved his fitness levels significantly"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 196
+    },
+    {
+      "name": "David Warner",
+      "salary": "6.25 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "A captaincy material and an IPL legend ",
+        " Destructive opening batsman ",
+        " Excellent outfielder by the boundary"
+      ],
+      "country": "Australia",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 625,
+      "eflBase": 100,
+      "rank": 62
+    },
+    {
+      "name": "Rilee Rossouw",
+      "salary": "4.60 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Very strong off the back-foot and against anything short ",
+        " Is a fast scorer when he gets going ",
+        " Has previous IPL experience with RCB"
+      ],
+      "country": "South Africa",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 459,
+      "eflBase": 50,
+      "rank": 75
+    },
+    {
+      "name": "Philip Salt",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Very strong leg-side player ",
+        " Attacks from the get-go and usually bats in the top 3 ",
+        " Can keep wickets as well"
+      ],
+      "country": "England",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 106
+    },
+    {
+      "name": "Manish Pandey",
+      "salary": "2.40 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "First Indian to score a IPL hundred ",
+        " Very strong against spin ",
+        " Outstanding fielder and has captaincy experience"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 240,
+      "eflBase": 50,
+      "rank": 102
+    },
+    {
+      "name": "Anrich Nortje",
+      "salary": "6.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "An out-and-out fast bowler ",
+        "Bowls consistently at high speeds ",
+        "Genuine wicket-taker at any stage"
+      ],
+      "country": "South Africa",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 650,
+      "eflBase": 100,
+      "rank": 58
+    },
+    {
+      "name": "Khaleel Ahmed",
+      "salary": "5.25 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "An attacking left-arm wicket-taker ",
+        " Can bowl at both ends of an innings ",
+        " Has ample variations"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 525,
+      "eflBase": 50,
+      "rank": 71
+    },
+    {
+      "name": "Lungi Ngidi",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Tall, hit-the-deck-hard bowler, who can move the ball both ways ",
+        "Can bowl at 140+ kph ",
+        "Has good variations and troubles batters with his bounce"
+      ],
+      "country": "South Africa",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 156
+    },
+    {
+      "name": "Chetan Sakariya",
+      "salary": "4.20 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Swings the new ball both ways ",
+        " Good variations at the death ",
+        " The recent India cap will give him confidence"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 420,
+      "eflBase": 50,
+      "rank": 77
+    },
+    {
+      "name": "Praveen Dubey",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "An effective bowling all-rounder ",
+        "Wrist spinner and a gun fielder ",
+        "Capable of producing cameos with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 157
+    },
+    {
+      "name": "Kamlesh Nagarkoti",
+      "salary": "1.10 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Swings the new ball ",
+        " Excellent fielder ",
+        " Handy with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 110,
+      "eflBase": 50,
+      "rank": 128
+    },
+    {
+      "name": "Kuldeep Yadav",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "One of the best left-arm wrist spinners in India ",
+        " Proven record in IPL and international cricket ",
+        " Sticks to good old method of tossing it up"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 107
+    },
+    {
+      "name": "Mustafizur Rahman",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Excellent death bowler ",
+        " His variations are one of a kind ",
+        " Has been in good rhythm in the last 18 months"
+      ],
+      "country": "Bangladesh",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 108
+    },
+    {
+      "name": "Aman Hakim Khan",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Can play finisher role with the bat ",
+        " Has the ability to swing ",
+        " Perfect fit for all-rounder"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 197
+    },
+    {
+      "name": "Ishant Sharma",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Has 300-plus Test wickets ",
+        " Has a best of 5/12 in T20s ",
+        " Decent economy of 7.77 in T20s (145 games so far)"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 158
+    },
+    {
+      "name": "Mukesh Kumar",
+      "salary": "5.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Canny and experienced pacer from Bengal ",
+        " Had an impressive recent A tour of Bangladesh ",
+        " Ability to swing and seam the new ball"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 550,
+      "eflBase": 50,
+      "rank": 70
+    },
+    {
+      "name": "Axar Patel",
+      "salary": "9.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "An accurate left-arm spinner ",
+        "Can bowl at any stage of the match ",
+        "Handy with the bat and can produce cameos"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 900,
+      "eflBase": 200,
+      "rank": 31
+    },
+    {
+      "name": "Lalit Yadav",
+      "salary": "65.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A batting all-rounder ",
+        "Has power-hitting abilities against spinners ",
+        "Useful part-time off-spinner"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 65,
+      "eflBase": 20,
+      "rank": 145
+    },
+    {
+      "name": "Vicky Ostwal",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Effective left-arm spinner who turns the ball sharply ",
+        " Leading wicket-taker for India at the 2022 Under 19 World Cup"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 198
+    },
+    {
+      "name": "Ripal Patel",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": ["Explosive middle-order batter ", "Dibbly-dobbly medium-pacer"],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 199
+    },
+    {
+      "name": "Mitchell Marsh",
+      "salary": "6.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "A high-quality overseas all-rounder ",
+        " Would be high on confidence after his Man of the Series performance in the World Cup ",
+        " Has matured as a batsman considerably"
+      ],
+      "country": "Australia",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 650,
+      "eflBase": 100,
+      "rank": 59
+    },
+    {
+      "name": "Rishabh Pant",
+      "salary": "16.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "WK-Batter",
+      "intro": [
+        "Attacking middle order batter ",
+        "Lethal against medium pace and spin bowling ",
+        "Inventive in terms of strokeplay"
+      ],
+      "country": "India",
+      "iplTeam": "DC",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1600,
+      "eflBase": 200,
+      "rank": 6
+    },
+    {
+      "name": "Shubman Gill",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "Perfect innings builder at the top ",
+        " Has the best pull shot among young Indian batsmen ",
+        " Experience of captaining the domestic side"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 42
+    },
+    {
+      "name": "Sai Sudharsan",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Aggressive top-order batter with good strike-rotating skills ",
+        " Good player against all types of bowling ",
+        " Offers high value in the field"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 200
+    },
+    {
+      "name": "Abhinav Manohar Sadarangani",
+      "salary": "2.60 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Solid middle-order bat ",
+        " Has the power game, can also be used as pinch-hitter ",
+        " Played crucial knocks under pressure for Karnataka in Syed Mushtaq Ali Trophy, 2021"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 260,
+      "eflBase": 50,
+      "rank": 97
+    },
+    {
+      "name": "David Miller",
+      "salary": "3.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "One of the most feared power-hitters ",
+        " A top fielder in the outfield ",
+        " Matured considerably over the last two years"
+      ],
+      "country": "South Africa",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 300,
+      "eflBase": 50,
+      "rank": 93
+    },
+    {
+      "name": "Kane Williamson",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Tactically sound as a captain ",
+        " Busy at the crease, smart in manipulating the field ",
+        " Agile on the field (mainly fields at cover/mid-wicket)"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 109
+    },
+    {
+      "name": "Rashid Khan",
+      "salary": "15.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Arguably the best leg spinner in white-ball cricket ",
+        " Has a deadly googly ",
+        " Powerful striker with the bat"
+      ],
+      "country": "Afghanistan",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1500,
+      "eflBase": 200,
+      "rank": 11
+    },
+    {
+      "name": "Darshan Nalkande",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "New ball bowler - swings and seams ",
+        "Decent hitter in the lower-order ",
+        "In the watchlist for suspect bowling action"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 201
+    },
+    {
+      "name": "Yash Dayal",
+      "salary": "3.20 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "New-ball bowler who can swing it both ways ",
+        "Among the top-10 wicket-takers in the Vijay Hazare Trophy in 2021-22"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 320,
+      "eflBase": 50,
+      "rank": 92
+    },
+    {
+      "name": "Pradeep Sangwan",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Seasoned left-arm pacer from Delhi ",
+        " Has played for four IPL teams before ",
+        " Moves the ball in the air and off the pitch"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 202
+    },
+    {
+      "name": "Alzarri Joseph",
+      "salary": "2.40 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Skiddy off the wicket",
+        " His metronomical lines and lengths troubles the batters",
+        " Is a handy lower-order batter"
+      ],
+      "country": "West Indies",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 240,
+      "eflBase": 50,
+      "rank": 103
+    },
+    {
+      "name": "Ravisrinivasan Sai Kishore",
+      "salary": "3.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "A smart left-arm orthodox spinner, decent technique with the bat ",
+        "Leading wicket-taker in the Syed Mushtaq Ali Trophy in 2019-20"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 300,
+      "eflBase": 50,
+      "rank": 94
+    },
+    {
+      "name": "Noor Ahmad",
+      "salary": "30.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Penetrative left-arm wrist-spinner, who spins the ball both ways ",
+        " Handy power-hitter ",
+        " Already a popular talent at global level in franchise cricket at the age of 17"
+      ],
+      "country": "Afghanistan",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 30,
+      "eflBase": 20,
+      "rank": 178
+    },
+    {
+      "name": "Mohammed Shami",
+      "salary": "6.25 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "One of the best Indian seam bowlers available ",
+        " Possesses an excellent yorker and can reverse the old ball as well ",
+        " Leading wicket-taker for PBKS in the last three seasons"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 625,
+      "eflBase": 100,
+      "rank": 63
+    },
+    {
+      "name": "Shivam Mavi",
+      "salary": "6.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "Can bowl in the powerplay and at the death ",
+        " Has good mix of slower balls ",
+        " Experience of playing in high-pressure situations"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 600,
+      "eflBase": 100,
+      "rank": 65
+    },
+    {
+      "name": "Joshua Little",
+      "salary": "4.40 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Picked up a hat-trick (vs NZ) in 2022 T20 WC",
+        " Averages 20.46 at an economy of 7.34 in T20s",
+        " Has plenty of variations with the ball"
+      ],
+      "country": "Ireland",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 440,
+      "eflBase": 50,
+      "rank": 76
+    },
+    {
+      "name": "Mohit Sharma",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Has played over 85 IPL games so far ",
+        " Best of 4/14 in IPL ",
+        " Part of T20 WC final 2014"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 159
+    },
+    {
+      "name": "Hardik Pandya",
+      "salary": "15.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "Four time IPL champion ",
+        " Stays back and across to maximise his bottom hand power ",
+        " Contributes in all three departments"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1500,
+      "eflBase": 200,
+      "rank": 12
+    },
+    {
+      "name": "Vijay Shankar",
+      "salary": "1.40 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Versatile with the bat ",
+        " Controls middle overs with the ball ",
+        " Targets straight boundaries against spin"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 140,
+      "eflBase": 50,
+      "rank": 125
+    },
+    {
+      "name": "Jayant Yadav",
+      "salary": "1.70 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "A high utility all-rounder",
+        " Can bowl in the powerplay, and is usually very economical ",
+        " Experience of playing for the national side"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 170,
+      "eflBase": 50,
+      "rank": 117
+    },
+    {
+      "name": "Rahul Tewatia",
+      "salary": "9.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "A rare Indian all-rounder ",
+        " Hard-hitting finisher ",
+        " Would be high on confidence after being drafted into the Indian T20I squad"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 900,
+      "eflBase": 200,
+      "rank": 32
+    },
+    {
+      "name": "Odean Smith",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A batter with brute force ",
+        " Used as a finisher by West Indies ",
+        " Can bowl at rapid speeds with a short run-up"
+      ],
+      "country": "West Indies",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 160
+    },
+    {
+      "name": "Matthew Wade",
+      "salary": "2.40 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "WK-Batter",
+      "intro": [
+        "Aggressive batter who can be an opener as well as finisher ",
+        " Very good glovesman"
+      ],
+      "country": "Australia",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 240,
+      "eflBase": 50,
+      "rank": 104
+    },
+    {
+      "name": "Wriddhiman Saha",
+      "salary": "1.90 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "WK-Batter",
+      "intro": [
+        "Arguably the best Indian wicket-keeper ",
+        " Can bat at any position ",
+        " Experienced player, and can be part of the leadership group"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 190,
+      "eflBase": 50,
+      "rank": 115
+    },
+    {
+      "name": "Urvil Patel",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Aggressive opener from Gujarat ",
+        " Smacked a 18-ball fifty in Syed Mushtaq Ali trophy 2022 ",
+        " Favours leg-side"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 203
+    },
+    {
+      "name": "Srikar Bharat",
+      "salary": "1.20 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "WK-Batter",
+      "intro": [
+        "A superb wicket-keeper with rich domestic experience ",
+        " Can bat anywhere in the top 6 ",
+        " Won a game for RCB with a last-ball six in 2021 IPL"
+      ],
+      "country": "India",
+      "iplTeam": "GT",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 120,
+      "eflBase": 50,
+      "rank": 127
+    },
+    {
+      "name": "Rinku Singh",
+      "salary": "55.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Proven big-hitter in domestic cricket ",
+        " Targets mid-wicket region against spinners"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 55,
+      "eflBase": 20,
+      "rank": 150
+    },
+    {
+      "name": "Shreyas Iyer",
+      "salary": "12.25 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Batter",
+      "intro": [
+        "A stable top-order batter ",
+        "Can explode against spin ",
+        "Reasonable leader, led DC to two playoffs"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1225,
+      "eflBase": 200,
+      "rank": 16
+    },
+    {
+      "name": "Mandeep Singh",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Experienced opening batsman who can maximize the powerplay ",
+        " A gun fielder in the outfield ",
+        " Domestic captaincy experience"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 161
+    },
+    {
+      "name": "Varun Chakaravarthy",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "Arguably the best mystery spinner in India ",
+        " Always keeps the stumps in play ",
+        " Can bowl at any stage of the game"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 43
+    },
+    {
+      "name": "Tim Southee",
+      "salary": "1.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Classic swing bowler ",
+        " Can bowl four overs on the trot upfront ",
+        " Proven six-hitter in international cricket"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 150,
+      "eflBase": 50,
+      "rank": 120
+    },
+    {
+      "name": "Umesh Yadav",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Proven international cricketer ",
+        " Can bowl high pace bumpers for fun ",
+        " Can muscle a few big hits with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 110
+    },
+    {
+      "name": "Shardul Thakur",
+      "salary": "10.75 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Partnership breaker, brave-hearted bowler ",
+        " Deceives batters with knuckle ball, bowls swing and seam ",
+        " Can play audacious shots and crucial cameos"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1075,
+      "eflBase": 200,
+      "rank": 24
+    },
+    {
+      "name": "Lockie Ferguson",
+      "salary": "10.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Sheer high-quality pace ",
+        " Skiddy and has a pacy surprise bumper ",
+        " Can tonk a few with the bat"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1000,
+      "eflBase": 200,
+      "rank": 25
+    },
+    {
+      "name": "Suyash Sharma",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "A promising leg-spinner ",
+        " Can spin both ways ",
+        " Has a deceptive googly"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 204
+    },
+    {
+      "name": "Kulwant Khejroliya",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Left-arm pacer from Delhi ",
+        " Has been part of RCB, DC and MI previously ",
+        " Usually controls middle overs"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 205
+    },
+    {
+      "name": "Harshit Rana",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Slingy tall medium pacer ",
+        " Has a very good yorker ",
+        " Played 2 games for KKR in IPL 2022"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 206
+    },
+    {
+      "name": "Andre Russell",
+      "salary": "12.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "Proven finisher with the bat ",
+        " Reliable sixth bowling option ",
+        " Ability to win games single-handedly"
+      ],
+      "country": "West Indies",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1200,
+      "eflBase": 200,
+      "rank": 18
+    },
+    {
+      "name": "Venkatesh Iyer",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "Often targets extra cover region ",
+        " Can be a perfect sixth bowling option ",
+        " Experience of playing for the national side"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 44
+    },
+    {
+      "name": "Sunil Narine",
+      "salary": "6.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "One of the best mystery spinners in T20 cricket ",
+        " Can open and play the finisher role with the bat ",
+        " Two-time IPL champion"
+      ],
+      "country": "West Indies",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 600,
+      "eflBase": 100,
+      "rank": 66
+    },
+    {
+      "name": "Anukul Roy",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Played key role in the U 19 World Cup winning squad in 2018 ",
+        " Very economical with the ball ",
+        " Natural six hitter and can finish games"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 207
+    },
+    {
+      "name": "Nitish Rana",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "Can play as an opener and in the middle-order ",
+        " Decent sixth-bowling option ",
+        " Experience in playing high-pressure situations"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 45
+    },
+    {
+      "name": "Shakib Al Hasan",
+      "salary": "1.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Arguably the best spin-bowling all-rounder ",
+        " Has a lovely drift which often deceives the batters ",
+        " Played over 70 IPL games so far"
+      ],
+      "country": "Bangladesh",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 150,
+      "eflBase": 50,
+      "rank": 121
+    },
+    {
+      "name": "Vaibhav Arora",
+      "salary": "60.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A right-arm medium pacer ",
+        " A penetrative new ball bowler ",
+        " Played 5 IPL games for PBKS in 2022"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 60,
+      "eflBase": 20,
+      "rank": 148
+    },
+    {
+      "name": "David Wiese",
+      "salary": "1.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Proven medium-pace all-rounder ",
+        " Has six five-fors in T20s so far ",
+        " Can play finisher with the bat"
+      ],
+      "country": "Namibia",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 100,
+      "eflBase": 50,
+      "rank": 131
+    },
+    {
+      "name": "Litton Das",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Can play enforcer as well as anchor with the bat ",
+        " Can keep wickets efficiently ",
+        " Recently led Bangladesh to a (ODI) series win against India"
+      ],
+      "country": "Bangladesh",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 162
+    },
+    {
+      "name": "N Jagadeesan",
+      "salary": "90.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Reliable opening batter and keeper ",
+        " Prolific run-getter in TNPL ",
+        " Part of IPL winning squad (CSK) in 2018 and 2021"
+      ],
+      "country": "India",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 90,
+      "eflBase": 20,
+      "rank": 135
+    },
+    {
+      "name": "Rahmanullah Gurbaz",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Proven aggressive opening batter ",
+        " Strikes at above 150 in T20s ",
+        " Played several leagues all around the world"
+      ],
+      "country": "Afghanistan",
+      "iplTeam": "KKR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 163
+    },
+    {
+      "name": "Manan Vohra",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "An elegant all-round player ",
+        " Strong on anything short and wide"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 208
+    },
+    {
+      "name": "Ravi Bishnoi",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Bowls with a quickish arm-action",
+        " Has an effective googly",
+        " Excellent fielder in the deep"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 81
+    },
+    {
+      "name": "Mohsin Khan",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Uses the left-arm angle to excellent effect ",
+        " Has a vicious bouncer"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 209
+    },
+    {
+      "name": "Mayank Yadav",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Strong action with an ability to bend the ball into the right-hander"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 210
+    },
+    {
+      "name": "Avesh Khan",
+      "salary": "10.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Promising young fast bowler ",
+        "Has a good mix of variations in his kitty ",
+        "Can be an enforcer at any stage of the innings"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1000,
+      "eflBase": 200,
+      "rank": 26
+    },
+    {
+      "name": "Mark Wood",
+      "salary": "7.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "Skiddy with the ball, offers raw pace ",
+        " Has a surprise bumper and yorker ",
+        " More than capable with the bat"
+      ],
+      "country": "England",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 750,
+      "eflBase": 100,
+      "rank": 52
+    },
+    {
+      "name": "Jaydev Unadkat",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Experienced left-arm seamer ",
+        " Consistent domestic cricket performer ",
+        " Has plenty of slower ball variations"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 164
+    },
+    {
+      "name": "Yash Thakur",
+      "salary": "45.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Bowls with a nippy seam",
+        " Best bowling figures of 4 for 5 in T20s"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 45,
+      "eflBase": 20,
+      "rank": 175
+    },
+    {
+      "name": "Romario Shepherd",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Strongly built, can be used a finisher for his hitting abilities ",
+        " Bowls pressure overs ",
+        " Part of CPL final in 2018 and 2019"
+      ],
+      "country": "West Indies",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 165
+    },
+    {
+      "name": "Amit Mishra",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "One of India's legendary leg-spinners ",
+        " Has three IPL hat-tricks so far ",
+        " Best of 5/17 in IPL"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 166
+    },
+    {
+      "name": "Marcus Stoinis",
+      "salary": "9.20 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "Resourceful power-hitter ",
+        "Flexible to bat at any position ",
+        "Offers reasonable value with the ball"
+      ],
+      "country": "Australia",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 919,
+      "eflBase": 200,
+      "rank": 30
+    },
+    {
+      "name": "Kyle Mayers",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Scored a double hundred on Test debut in record chase ",
+        "A big-hitting batter who can open ",
+        "Bowls handy medium pace"
+      ],
+      "country": "West Indies",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 167
+    },
+    {
+      "name": "Karan Sharma",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Handy all-rounder from UP ",
+        " Has a healthy average of 38 in T20s ",
+        " Bowls off-spin, effective in the middle overs"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 211
+    },
+    {
+      "name": "Krishnappa Gowtham",
+      "salary": "90.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Most expensive uncapped player in IPL auctions - Rs 9.25 crore ",
+        "Uses his height to generate bounce and varies his length and pace smartly ",
+        "A handy batter with his cameos in the lower order"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 90,
+      "eflBase": 20,
+      "rank": 136
+    },
+    {
+      "name": "Ayush Badoni",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Powerful hitter, especially against spin ",
+        " Loves to play the slog-sweep"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 212
+    },
+    {
+      "name": "Deepak Hooda",
+      "salary": "5.75 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "A rare Indian batting all-rounder, who can chip in with off-breaks ",
+        " Can hit them big from ball one ",
+        " The recent India cap should give him a lot of confidence"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 575,
+      "eflBase": 50,
+      "rank": 67
+    },
+    {
+      "name": "Krunal Pandya",
+      "salary": "8.25 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "Power-hitter with the bat ",
+        " Bowls stump-to-stump and has a canny slider ",
+        " Captained Baroda in domestic circuit"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 825,
+      "eflBase": 100,
+      "rank": 37
+    },
+    {
+      "name": "Prerak Mankad",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A batting all-rounder ",
+        "Ability to bat in the middle order ",
+        "More than a handy medium pacer"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 213
+    },
+    {
+      "name": "Daniel Sams",
+      "salary": "75.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [""],
+      "country": "Australia",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 75,
+      "eflBase": 20,
+      "rank": 139
+    },
+    {
+      "name": "Naveen-ul-Haq",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Reliable death bowler ",
+        " Has a good yorker ",
+        " Best of 5/11 in T20s"
+      ],
+      "country": "Afghanistan",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 168
+    },
+    {
+      "name": "Yudhvir Singh Charak",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Plays finisher with the bat ",
+        " Usually bowls with the new ball ",
+        " Extracts extra bounce with his height"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 214
+    },
+    {
+      "name": "Swapnil Singh",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Left-arm spin bowling all-rounder ",
+        " Best of 6/19 in T20s ",
+        " Hard-hitter lower down the order"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 215
+    },
+    {
+      "name": "KL Rahul",
+      "salary": "17.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "WK-Batter",
+      "intro": [
+        "Stylish right-handed anchorman ",
+        " Very strong on the drives and the cuts ",
+        " Marked as future India captain"
+      ],
+      "country": "India",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1700,
+      "eflBase": 200,
+      "rank": 3
+    },
+    {
+      "name": "Quinton de Kock",
+      "salary": "6.75 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "WK-Batter",
+      "intro": [
+        "One of best keeper-batsman in international cricket ",
+        " can play 360 degrees ",
+        " Has experience of captaincy at national level"
+      ],
+      "country": "South Africa",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 675,
+      "eflBase": 100,
+      "rank": 56
+    },
+    {
+      "name": "Nicholas Pooran",
+      "salary": "16.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "WK-Batter",
+      "intro": [
+        "Natural six hitter ",
+        " An excellent fielder and can keep wickets too ",
+        " Experience of captaining the national side"
+      ],
+      "country": "West Indies",
+      "iplTeam": "LSG",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1600,
+      "eflBase": 200,
+      "rank": 7
+    },
+    {
+      "name": "Rohit Sharma",
+      "salary": "16.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Batter",
+      "intro": [
+        "Powerful striker of the ball ",
+        " Loves to play the pull ",
+        " Captain with the most number of IPL trophies"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1600,
+      "eflBase": 200,
+      "rank": 8
+    },
+    {
+      "name": "Suryakumar Yadav",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "A 360 degree player ",
+        " Can score at a fast rate ",
+        " Wonderful and versatile fielder"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 46
+    },
+    {
+      "name": "Tilak Varma",
+      "salary": "1.70 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Stylish left-handed top-order batter ",
+        "Has an impressive 140+ strike-rate in T20s ",
+        "Part-time off-spinner"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 170,
+      "eflBase": 50,
+      "rank": 118
+    },
+    {
+      "name": "Ramandeep Singh ",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "A batting all-rounder ",
+        "Can strike it at nearly 140 in the middle order ",
+        "Handy medium pacer"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 216
+    },
+    {
+      "name": "Dewald Brevis",
+      "salary": "3.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Stylish batter, nicknamed Baby AB for his stroke-making ",
+        "ICC U-19 World Cup Player of the Tournament in 2022 ",
+        "Part-time leg-spinner"
+      ],
+      "country": "South Africa",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 300,
+      "eflBase": 50,
+      "rank": 95
+    },
+    {
+      "name": "Jasprit Bumrah",
+      "salary": "12.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Terrific with the ball at any stage ",
+        " Has a lovely yorker and is very accurate ",
+        " Has plenty of variations"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1200,
+      "eflBase": 200,
+      "rank": 19
+    },
+    {
+      "name": "Mohd Arshad Khan",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "A left-arm all-rounder ",
+        "Played just three first class games for MP ",
+        "Handy lower-order bat and useful pacer"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 217
+    },
+    {
+      "name": "Jofra Archer",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "X-factor ",
+        "World-class pacer who can trouble the batters with pace, bounce and slower ones ",
+        "Powerful hitter lower down the order"
+      ],
+      "country": "England",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 47
+    },
+    {
+      "name": "Jason Behrendorff",
+      "salary": "75.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Tall bowler who moves the new ball both ways ",
+        "Wicket-taker in the powerplay, has a well-disguised slower ball ",
+        "Three-time BBL winner with Perth Scorchers"
+      ],
+      "country": "Australia",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 75,
+      "eflBase": 20,
+      "rank": 140
+    },
+    {
+      "name": "Akash Madhwal",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Right-arm pacer from Uttarakhand ",
+        " Best of 4 for 25 in T20s ",
+        " Effective with the new ball"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 218
+    },
+    {
+      "name": "Jhye Richardson",
+      "salary": "1.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Bowls with pace and has a good yorker ",
+        " Useful batter lower down the order ",
+        " Can bowl at both ends of an innings"
+      ],
+      "country": "Australia",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 150,
+      "eflBase": 50,
+      "rank": 122
+    },
+    {
+      "name": "Piyush Chawla",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Has over 270 plus T20 wickets ",
+        " Usually attacks the stumps with flatter legbreaks ",
+        " Part of 2011 WC winning team"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 169
+    },
+    {
+      "name": "Raghav Goyal",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Club cricketer who impressed the MI scouting team ",
+        " Bowls slow left-arm orthodox ",
+        " Best of 4/35"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 219
+    },
+    {
+      "name": "Hrithik Shokeen",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A right-arm off-spinner ",
+        "Was part of the India U23 Emergence squad in 2019"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 220
+    },
+    {
+      "name": "Arjun Tendulkar",
+      "salary": "30.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A promising left-arm pacer ",
+        "Been in the MI set-up for two years ",
+        "Picked for the upcoming Ranji Trophy season"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 30,
+      "eflBase": 20,
+      "rank": 179
+    },
+    {
+      "name": "Tim David",
+      "salary": "8.25 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "First player from Singapore to feature in the IPL ",
+        "Power-hitter who likes to play finisher ",
+        "Handy part-time off-spinner"
+      ],
+      "country": "Singapore",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 825,
+      "eflBase": 100,
+      "rank": 38
+    },
+    {
+      "name": "Kumar Kartikeya",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Bowls left-arm wrist spin ",
+        " Very economical and usually bowls the middle overs ",
+        " Best of 3/10 in T20s"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 221
+    },
+    {
+      "name": "Duan Jansen",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Can generate extra bounce with his height",
+        " Played for\u00c2\u00a0St Kitts and Nevis Patriots in the recent CPL",
+        " Has a sharp bumper, effective from round the wicket."
+      ],
+      "country": "South Africa",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 222
+    },
+    {
+      "name": "Cameron Green",
+      "salary": "17.50 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "A powerful striker at the top of the order ",
+        " One of the better players of spin and pace alike ",
+        " Handy with the ball and can be a partnership breaker"
+      ],
+      "country": "Australia",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1750,
+      "eflBase": 200,
+      "rank": 2
+    },
+    {
+      "name": "Shams Mulani",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Left-arm spin-bowling all-rounder ",
+        " Economy under 7 (played 35 T20s so far) ",
+        " Very handy batter lower down the order"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 223
+    },
+    {
+      "name": "Nehal Wadhera",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Previously captained India U-19 ",
+        " Left-handed bat who usually slots in the middle-order ",
+        " Can Bowl leg spin"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 224
+    },
+    {
+      "name": "Ishan Kishan",
+      "salary": "15.25 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "WK-Batter",
+      "intro": [
+        "Can open and also play as a finisher ",
+        " Enjoys pace and targets mid-wicket against spinners ",
+        " Experienced in playing high-pressure situations"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1525,
+      "eflBase": 200,
+      "rank": 9
+    },
+    {
+      "name": "Tristan Stubbs",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Aggressive batter, plays the finisher role ",
+        " Strikes over 150 in T20s ",
+        " Can bowl handy off-breaks"
+      ],
+      "country": "South Africa",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 225
+    },
+    {
+      "name": "Vishnu Vinod",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Attacking middle-order batter ",
+        " Offers value as a wicket-keeper ",
+        " Effective in the death overs as a finisher"
+      ],
+      "country": "India",
+      "iplTeam": "MI",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 226
+    },
+    {
+      "name": "Bhanuka Rajapaksa",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": ["A strong left-hander ", " Has big-hitting prowess"],
+      "country": "Sri Lanka",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 170
+    },
+    {
+      "name": "Shahrukh Khan",
+      "salary": "9.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Batter",
+      "intro": [
+        "One of the hottest properties in the domestic circuit ",
+        " Broad-shouldered hard-hitting batter, finisher ",
+        " Can single-handedly demoralise opponents"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 900,
+      "eflBase": 200,
+      "rank": 33
+    },
+    {
+      "name": "Shikhar Dhawan",
+      "salary": "8.25 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "Dependable opening batter ",
+        "Can balance attack and defence ",
+        "Offers leadership qualities and is a strong fielder"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 825,
+      "eflBase": 100,
+      "rank": 39
+    },
+    {
+      "name": "Harpreet Singh Bhatia",
+      "salary": "40.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Part of KKR and RCB previously ",
+        " Usually bats in the top four ",
+        " Has 16 T20 fifties at an average of 36"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 40,
+      "eflBase": 20,
+      "rank": 176
+    },
+    {
+      "name": "Arshdeep Singh",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Has a very deceptive slower ball",
+        " Used as a death over specialists by Punjab Kings ",
+        " A very good temperament, cool attitude"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 82
+    },
+    {
+      "name": "Raj Bawa",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Stylish left-handed middle-order batter",
+        " Pace bowling all-rounder, rare commodity in Indian cricket",
+        " Was the Player of the Match in the final of 2022 U-19 WC"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 111
+    },
+    {
+      "name": "Nathan Ellis",
+      "salary": "75.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Death over specialist with a good yorker and subtle variations ",
+        " Can hit speeds of 150kph consistently ",
+        " Picked up a hat-trick on T20I debut"
+      ],
+      "country": "Australia",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 75,
+      "eflBase": 20,
+      "rank": 141
+    },
+    {
+      "name": "Harpreet Brar",
+      "salary": "3.80 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Bowls a difficult trajectory to hit ",
+        " Handy with the bat too"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 380,
+      "eflBase": 50,
+      "rank": 88
+    },
+    {
+      "name": "Rahul Chahar",
+      "salary": "5.25 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Street-smart leg spinner ",
+        " Bowls at a quicker pace and attacks the stumps ",
+        " Has a well-disguised googly and slider"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 525,
+      "eflBase": 50,
+      "rank": 72
+    },
+    {
+      "name": "Kagiso Rabada",
+      "salary": "9.25 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Versatile pacer, can clock high speeds ",
+        "Has lots of variations ",
+        "Handy lower-order batter who can hit boundaries"
+      ],
+      "country": "South Africa",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 925,
+      "eflBase": 200,
+      "rank": 29
+    },
+    {
+      "name": "Vidhwath Kaverappa",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Brilliant swing bowler",
+        " Can be used to bowl 4 overs on the trot upfront",
+        " Has had terrific white-ball season for Karnataka"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 227
+    },
+    {
+      "name": "Baltej Singh",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A right-arm medium pacer ",
+        "Been in the domestic circuit for a decade ",
+        "Played only a handful of games for Punjab"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 228
+    },
+    {
+      "name": "Liam Livingstone",
+      "salary": "11.50 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "Can smack it big from ball one ",
+        " Handy spinner who bowls both off-spin and leg-spin ",
+        " In red-hot form currently"
+      ],
+      "country": "England",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1150,
+      "eflBase": 200,
+      "rank": 20
+    },
+    {
+      "name": "Rishi Dhawan",
+      "salary": "55.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Bits-and-pieces all-rounder ",
+        "Subtle variations with the ball, quick-scorer ",
+        "Led Himachal Pradesh to their first-ever domestic title in the 2021-22 Vijay Hazare Trophy"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 55,
+      "eflBase": 20,
+      "rank": 151
+    },
+    {
+      "name": "Atharva Taide",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Among top 10 run-scorers in SMA 2021-22 ",
+        "A hard-hitting opening bat ",
+        "Decent left-arm spinner"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 229
+    },
+    {
+      "name": "Sam Curran",
+      "salary": "18.50 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Allrounder",
+      "intro": [
+        "Currently rated as one of the best all-rounders in T20 cricket ",
+        " Reliable death bowler ",
+        " A powerful striker, can bat anywhere in the top 7"
+      ],
+      "country": "England",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1850,
+      "eflBase": 200,
+      "rank": 1
+    },
+    {
+      "name": "Sikandar Raza",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Has developed a 'Narine' like variation with the ball ",
+        " A versatile batter who can the finisher role ",
+        " Best of 4/8 in T20s"
+      ],
+      "country": "Zimbabwe",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 171
+    },
+    {
+      "name": "Mohit Rathee",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Young legspinner from Haryana ",
+        " Very sharp with his lines and lengths ",
+        " Relies on legbreak more often than not"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 230
+    },
+    {
+      "name": "Shivam Singh",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Aggressive batter lower down the order ",
+        " Very strong in the V ",
+        " Can bowl off breaks"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 231
+    },
+    {
+      "name": "Prabhsimran Singh",
+      "salary": "60.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": ["Aggressive wicket-keeper batter ", " Powerplay enforcer"],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 60,
+      "eflBase": 20,
+      "rank": 149
+    },
+    {
+      "name": "Jitesh Sharma",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Attacking top-order batter ",
+        " Powerplay enforcer ",
+        " Reliable gloveman"
+      ],
+      "country": "India",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 232
+    },
+    {
+      "name": "Jonny Bairstow",
+      "salary": "6.75 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "WK-Batter",
+      "intro": [
+        "Highly experienced as an opener and in the middle-order ",
+        " Keeps wickets and can contribute as a fielder ",
+        " Attacks spinners from the get-go"
+      ],
+      "country": "England",
+      "iplTeam": "PBKS",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 675,
+      "eflBase": 100,
+      "rank": 57
+    },
+    {
+      "name": "Yashasvi Jaiswal",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Highly-talented attacking left-handed opener ",
+        " Player of the Series - 2020 U-19 World Cup"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 83
+    },
+    {
+      "name": "Devdutt Padikkal",
+      "salary": "7.75 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "Consistent at the top of the order ",
+        "Strong off the back-foot and a wristy player ",
+        "Safe outfielder and catcher"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 775,
+      "eflBase": 100,
+      "rank": 50
+    },
+    {
+      "name": "Shimron Hetmyer",
+      "salary": "8.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "An aggressive middle-order batter ",
+        "Equally lethal against spin and pace ",
+        "Capable of batting in different gears"
+      ],
+      "country": "West Indies",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 850,
+      "eflBase": 100,
+      "rank": 35
+    },
+    {
+      "name": "Joe Root",
+      "salary": "1.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "A canny batter against all kinds of spin ",
+        " Can be very useful as an anchor in the top-order ",
+        " Bowls useful off-breaks and is a safe catcher"
+      ],
+      "country": "England",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 100,
+      "eflBase": 50,
+      "rank": 132
+    },
+    {
+      "name": "Kuldip Yadav",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": ["Tall, left-arm, skiddy pacer ", " Can move the ball both ways"],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 233
+    },
+    {
+      "name": "Navdeep Saini",
+      "salary": "2.60 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Hit-the-deck kind of bowler ",
+        "Has raw pace that can surprise the batters ",
+        "Still developing as death overs bowler"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 260,
+      "eflBase": 50,
+      "rank": 98
+    },
+    {
+      "name": "Kuldeep Sen",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Lanky right-arm pacer who can hit the deck hard ",
+        " Swings the ball both ways ",
+        " Has a very good inswinging yorker"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 234
+    },
+    {
+      "name": "Obed McCoy",
+      "salary": "75.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Swings the new ball at high pace ",
+        " Possesses an extremely deceptive slower ball ",
+        " Offers good value as a death bowler due to his effective pace variations"
+      ],
+      "country": "West Indies",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 75,
+      "eflBase": 20,
+      "rank": 142
+    },
+    {
+      "name": "KC Cariappa",
+      "salary": "30.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Mystery spinner ",
+        " Is coming off a good first-class season ",
+        " Can be handy on slow Indian tracks"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 30,
+      "eflBase": 20,
+      "rank": 180
+    },
+    {
+      "name": "Yuzvendra Chahal",
+      "salary": "6.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "Brave spinner who flights the ball ",
+        " Gets good turn on both leg-spin/googly ",
+        " Always on the list for the Purple Cap"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 650,
+      "eflBase": 100,
+      "rank": 60
+    },
+    {
+      "name": "Prasidh Krishna",
+      "salary": "10.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Bowler",
+      "intro": [
+        "Can extract extra bounce and bowls at high pace ",
+        " Has good mix of variations ",
+        " Experience of playing for the national side"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1000,
+      "eflBase": 200,
+      "rank": 27
+    },
+    {
+      "name": "Trent Boult",
+      "salary": "8.00 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Bowler",
+      "intro": [
+        "Can bowl at any stage of the game ",
+        " Swings the new ball, has many slower ball variations ",
+        " Brilliant boundary fielder"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 800,
+      "eflBase": 100,
+      "rank": 48
+    },
+    {
+      "name": "Adam Zampa",
+      "salary": "1.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Australia's most-trusted white-ball spinner in the last 5 years ",
+        " Has a superb leg-break and uses the wrong 'un effectively ",
+        " Often used as a middle-overs enforcer"
+      ],
+      "country": "Australia",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 150,
+      "eflBase": 50,
+      "rank": 123
+    },
+    {
+      "name": "KM Asif",
+      "salary": "30.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Right-arm pacer from Kerala ",
+        " Part of IPL winning squad (CSK) in 2018 and 2021 ",
+        " Best of 3/15 in T20s"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 30,
+      "eflBase": 20,
+      "rank": 181
+    },
+    {
+      "name": "Murugan Ashwin",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Turns the ball sharply ",
+        " Genuine wicket-taker ",
+        " Utility option with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 235
+    },
+    {
+      "name": "Riyan Parag",
+      "salary": "3.80 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Lower-order power hitter ",
+        " Useful off-spinner and a top-class fielder ",
+        " Gives good balance to any side"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 380,
+      "eflBase": 50,
+      "rank": 89
+    },
+    {
+      "name": "Ravichandran Ashwin",
+      "salary": "5.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Off-spinner who has lots of varieties ",
+        "Can also bowl leg spin if needed ",
+        "Capable with the bat, can produce cameos"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 500,
+      "eflBase": 50,
+      "rank": 74
+    },
+    {
+      "name": "Jason Holder",
+      "salary": "5.75 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Arguably one of the best fast-bowling all-rounder currently ",
+        " Can be a leadership candidate ",
+        " Extracts good bounce with his height"
+      ],
+      "country": "West Indies",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 575,
+      "eflBase": 50,
+      "rank": 68
+    },
+    {
+      "name": "Akash Vashist",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [""],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 236
+    },
+    {
+      "name": "Abdul Basith",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Aggressive batting all-rounder from Kerala ",
+        " Bowls right arm off-break ",
+        " Usually bats in the middle-order"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 237
+    },
+    {
+      "name": "Sanju Samson",
+      "salary": "14.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "WK-Batter",
+      "intro": [
+        "Plays outstanding shots ",
+        " Can operate smoothly in all gears ",
+        " Match-winner, prolific run-getter"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1400,
+      "eflBase": 200,
+      "rank": 14
+    },
+    {
+      "name": "Jos Buttler",
+      "salary": "10.00 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "WK-Batter",
+      "intro": [
+        "One of the hardest hitters the game has seen ",
+        " Top wicket-keeper ",
+        " Intimidating batter who can open and finish games"
+      ],
+      "country": "England",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1000,
+      "eflBase": 200,
+      "rank": 28
+    },
+    {
+      "name": "Dhruv Jurel",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Exciting middle-order hitter who has a good range of shots ",
+        " Vice-captain of the Indian team at 2020 U-19 World Cup"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 238
+    },
+    {
+      "name": "Donavon Ferreira",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Powerful middle-order bat",
+        " Wicket-keeper and can bowl as well",
+        " Plays for Titans in CSA T20 challenge"
+      ],
+      "country": "South Africa",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 172
+    },
+    {
+      "name": "Kunal Singh Rathore",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Left-handed wicket-keeper batter ",
+        " Usually bats in the top 4 ",
+        " Favours the leg-side"
+      ],
+      "country": "India",
+      "iplTeam": "RR",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 239
+    },
+    {
+      "name": "Aiden Markram",
+      "salary": "2.60 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Batter",
+      "intro": [
+        "Technically sound top-order batsman ",
+        " A proven customer on sub-continental tracks ",
+        " Useful off-spinner who can sneak in a couple of overs in the powerplay"
+      ],
+      "country": "South Africa",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 260,
+      "eflBase": 50,
+      "rank": 99
+    },
+    {
+      "name": "Rahul Tripathi",
+      "salary": "8.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "Proven opener and finisher in IPL ",
+        " Plays percentage cricket if and when needed ",
+        " Innovative stroke-maker"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 850,
+      "eflBase": 100,
+      "rank": 36
+    },
+    {
+      "name": "Mayank Agarwal",
+      "salary": "8.25 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Batter",
+      "intro": [
+        "A steady base and a superb driver through the off-side ",
+        " Loves pace on the ball and excellent against spin ",
+        " Experience of captaincy in IPL"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 825,
+      "eflBase": 100,
+      "rank": 40
+    },
+    {
+      "name": "Harry Brook",
+      "salary": "13.25 Cr",
+      "status": "unsold",
+      "tier": 1,
+      "role": "Batter",
+      "intro": [
+        "An aggressive batter ",
+        " Scores at a rapid pace and is good against spin ",
+        " Player of the series in both T20 & Test series in Pakistan 2022"
+      ],
+      "country": "England",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 1325,
+      "eflBase": 200,
+      "rank": 15
+    },
+    {
+      "name": "Anmolpreet Singh",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Batter",
+      "intro": [
+        "Highly experienced in domestic circuit ",
+        " Builds partnership at the top of the order ",
+        " Can absorb pressure situations"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 240
+    },
+    {
+      "name": "Umran Malik",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Tearaway right-arm speedster ",
+        " Can bowl 150+ and move the ball at pace as well"
+      ],
+        "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 84
+    },
+    {
+      "name": "Fazalhaq Farooqi",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Left-arm pacer, who bowls a good slower ball ",
+        " Was a net bowler with CSK for IPL 2021"
+      ],
+      "country": "Afghanistan",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 173
+    },
+    {
+      "name": "Kartik Tyagi",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Can crank up the speedguns ",
+        " Gets the new ball to move around ",
+        " Extremely accurate with his yorkers at the death"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 85
+    },
+    {
+      "name": "T Natarajan",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Yorker specialist ",
+        " Excellent record while bowling in the death ",
+        " Has ample variations to keep the batsmen guessing"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 86
+    },
+    {
+      "name": "Bhuvneshwar Kumar",
+      "salary": "4.20 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Experienced to bowl with new and old ball ",
+        " Possesses good variations ",
+        " Has a deadly inswinger"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 420,
+      "eflBase": 50,
+      "rank": 78
+    },
+    {
+      "name": "Akeal Hosein",
+      "salary": "1.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "Is very accurate with his left-arm slow orthodox ",
+        " Bowls mainly during the powerplay ",
+        " Competent with the bat as a lower-order hitter"
+      ],
+      "country": "West Indies",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 100,
+      "eflBase": 50,
+      "rank": 133
+    },
+    {
+      "name": "Mayank Markande",
+      "salary": "50.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Bowler",
+      "intro": [
+        "Good upcoming Indian leggie ",
+        " Has a well-disguised googly ",
+        " Had a superb season with MI in 2018"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 50,
+      "eflBase": 20,
+      "rank": 174
+    },
+    {
+      "name": "Adil Rashid",
+      "salary": "2.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Bowler",
+      "intro": [
+        "One of the best spinners going around in world cricket at the moment ",
+        " Bowled a wicket-maiden in 2022 T20 WC final ",
+        " Can be handy with the bat"
+      ],
+      "country": "England",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 200,
+      "eflBase": 50,
+      "rank": 112
+    },
+    {
+      "name": "Abdul Samad",
+      "salary": "4.00 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Powerful striker ",
+        " Can clear any boundary with ease ",
+        " Useful with his leg-breaks"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 400,
+      "eflBase": 50,
+      "rank": 87
+    },
+    {
+      "name": "Marco Jansen",
+      "salary": "4.20 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Left arm swing bowler, extracts extra bounce",
+        " Experience of playing in pressure situations (Test cricket) ",
+        " More than handy with the bat"
+      ],
+      "country": "South Africa",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 420,
+      "eflBase": 50,
+      "rank": 79
+    },
+    {
+      "name": "Abhishek Sharma",
+      "salary": "6.50 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "Utility cricketer, contributing with bat, ball and in the field ",
+        " Can bat in different positions ",
+        " Loves targetting the spinners"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 650,
+      "eflBase": 100,
+      "rank": 61
+    },
+    {
+      "name": "Washington Sundar",
+      "salary": "8.75 Cr",
+      "status": "unsold",
+      "tier": 2,
+      "role": "Allrounder",
+      "intro": [
+        "A batting all-rounder ",
+        "Mainly utilized for his powerplay bowling skills ",
+        "Can float around in the batting order"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 875,
+      "eflBase": 100,
+      "rank": 34
+    },
+    {
+      "name": "Mayank Dagar",
+      "salary": "1.80 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Recorded best bowling figures in the U-19 WC final 2016 ",
+        " Bowls left-arm orthodox spin ",
+        " Very handy with the bat"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 180,
+      "eflBase": 50,
+      "rank": 116
+    },
+    {
+      "name": "Vivrant Sharma",
+      "salary": "2.60 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "Allrounder",
+      "intro": [
+        "Stylish and elegant left-handed batter",
+        " Loves playing in the V",
+        " Can bowl googlies"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 260,
+      "eflBase": 50,
+      "rank": 100
+    },
+    {
+      "name": "Sanvir Singh",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "Right-handed batting all-rounder from Punjab ",
+        " Plays finisher role with the bat ",
+        " USeful pacer with ability to swing"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 241
+    },
+    {
+      "name": "Samarth Vyas",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "Allrounder",
+      "intro": [
+        "A natural striker of the ball ",
+        " Very good against any kind of spin and deft against pace ",
+        " Has an impressive SR of 150 in T20s"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 242
+    },
+    {
+      "name": "Glenn Phillips",
+      "salary": "1.50 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "WK-Batter",
+      "intro": [
+        "Big-hitter and bowls handy off-spin ",
+        " Keeps wickets and is a gun outfielder ",
+        " Has hit most sixes in T20s in 2021"
+      ],
+      "country": "New Zealand",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 150,
+      "eflBase": 50,
+      "rank": 124
+    },
+    {
+      "name": "Heinrich Klaasen",
+      "salary": "5.25 Cr",
+      "status": "unsold",
+      "tier": 3,
+      "role": "WK-Batter",
+      "intro": [
+        "An aggressive batter who loves the finisher role ",
+        " Very handy wicket-keeper and a safe fielder as well ",
+        " Hit 105 sixes and 175 fours so far in T20s"
+      ],
+      "country": "South Africa",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 525,
+      "eflBase": 50,
+      "rank": 73
+    },
+    {
+      "name": "Nitish Reddy",
+      "salary": "20.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Promising all-rounder from Andhra ",
+        " Batting style similar to Manish Pandey ",
+        " Bowls handy right-arm medium pace"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 20,
+      "eflBase": 20,
+      "rank": 243
+    },
+    {
+      "name": "Upendra Yadav",
+      "salary": "25.0 L",
+      "status": "unsold",
+      "tier": 4,
+      "role": "WK-Batter",
+      "intro": [
+        "Top-order keeper-bat from UP ",
+        " Relies on timing with the bat ",
+        " Can bowl off spin"
+      ],
+      "country": "India",
+      "iplTeam": "SRH",
+      "ownerTeam": "",
+      "boughtFor": 0,
+      "salaryNumber": 25,
+      "eflBase": 20,
+      "rank": 182
+    }
+  ]
+  
