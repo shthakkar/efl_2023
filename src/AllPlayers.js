@@ -83,13 +83,13 @@ export default function AllPlayers() {
   ];
 
   const columns = [
-    { selector: (row) => row['name'], name: 'Name' },
-    { selector: (row) => row['iplTeam'], name: 'IPL Team' },
-    { selector: (row) => row['status'], name: 'Status' },
+    { selector: (row) => row['name'], name: 'Name' , sortable: true},
+    { selector: (row) => row['iplTeam'], name: 'IPL Team' , sortable: true},
+    { selector: (row) => row['status'], name: 'Status' , sortable: true},
 
-    { selector: (row) => row['role'], name: 'Role' },
-    { selector: (row) => row['country'], name: 'Country' },
-    { selector: (row) => row['tier'], name: 'Tier' },
+    { selector: (row) => row['role'], name: 'Role' , sortable: true},
+    { selector: (row) => row['country'], name: 'Country' , sortable: true},
+    { selector: (row) => row['tier'], name: 'Tier', sortable: true },
     { selector: (row) => row['salaryNumber'], name: 'Salary', sortable: true },
     {
       id: 'eflBase',
