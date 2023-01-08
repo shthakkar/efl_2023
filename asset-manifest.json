@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/efl_2023/static/css/main.0909e73d.css",
+    "main.js": "/efl_2023/static/js/main.d37a4b6c.js",
+    "static/js/787.0a3d61e4.chunk.js": "/efl_2023/static/js/787.0a3d61e4.chunk.js",
+    "index.html": "/efl_2023/index.html",
+    "main.0909e73d.css.map": "/efl_2023/static/css/main.0909e73d.css.map",
+    "main.d37a4b6c.js.map": "/efl_2023/static/js/main.d37a4b6c.js.map",
+    "787.0a3d61e4.chunk.js.map": "/efl_2023/static/js/787.0a3d61e4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0909e73d.css",
+    "static/js/main.d37a4b6c.js"
+  ]
+}
