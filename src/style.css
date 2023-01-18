@@ -6,7 +6,7 @@
     flex-wrap: wrap;
   }
   
-  button {
+  .mainButton {
     margin: 20px;
     padding: 10px 20px;
     background: linear-gradient(to right, #4caf50, #8bc34a);
@@ -16,11 +16,157 @@
     cursor: pointer;
   }
   
-  button:hover {
+  .mainButton:hover {
     background: linear-gradient(to right, #43a047, #7cb342);
   }
   
-  button:active {
+  .mainButton:active {
     background: linear-gradient(to right, #388e3c, #689f38);
   }
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
   
+  .top-row {
+    flex: 0.9;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .top-row-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .bottom-row {
+    flex: 0.1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  
+  .bottom-row-button {
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  .player-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #81d4fa; /* Light blue background color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #c9c9c9;
+  }
+  
+  .player-name {
+    color: #1a1a1a;
+    text-shadow: 2px 2px #c9c9c9;
+  }
+  
+  .player-country {
+    color: #b71c1c; /* Bright red color */
+    font-style: italic;
+  }
+  
+  .player-type {
+    color: #33691e; /* Vibrant green color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  .player-franchise {
+    color: #3f51b5; /* Deep purple color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Add a subtle gradient and rounded edges */
+.teamButton {
+    background: linear-gradient(to bottom, #ff7f00, #ff5500);
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
+
+  }
+  
+  /* Add a hover effect */
+  .teamButton:hover {
+    background: linear-gradient(to bottom, #ff5500, #ff7f00);
+  }
+  
+  .container-for-team {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cell-1 {
+    flex: 1;
+  }
+  
+  .cell-2 {
+    flex: 1;
+  }
+  
+  .my-image {
+    width: 100px;
+    height: 100px;
+  }
+
+  
+  .shiny-text {
+    background-color: #f5b183; /* vibrant color */
+    color: #fff; /* white text */
+    padding: 10px;
+    border-radius: 10px; /* rounded edges */
+    text-align: center; /* center align text */
+    font-size: 24px; /* large font size */
+    font-weight: bold; /* bold text */
+    text-shadow: 2px 2px #ffb347; /* adds a subtle shadow to text */
+    box-shadow: 0 0 10px #f5b183; /* adds a shiny effect to the background */
+    animation: shine 1s ease-in-out infinite; /* adds a shining animation to the background */
+  }
+  
+  /* animation keyframes */
+  @keyframes shine {
+    from {
+      box-shadow: 0 0 10px #f5b183;
+    }
+    to {
+      box-shadow: 0 0 20px #ffb347;
+    }
+  }
+  
+  /* Define the button style */
+.action-button {
+  background-color: #4CAF50; /* Green background */
+  border: none; /* Remove border */
+  color: white; /* White text */
+  padding: 15px 32px; /* Some padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline block element */
+  font-size: 16px; /* Set font size */
+  margin: 4px 2px; /* Add some margin */
+  cursor: pointer; /* Add cursor as pointer */
+}
+
+/* Add hover effect */
+.action-button:hover {
+  background-color: #3e8e41; /* Darken background on hover */
+}
