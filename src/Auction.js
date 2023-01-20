@@ -134,4 +134,3 @@ Auction() {
     </div>
   )
 }
->>>>>>> 10f69ccce166737aed79289f1fcc03ea1aebd8b9
