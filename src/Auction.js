@@ -68,6 +68,28 @@ Auction() {
   };
   const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions of Mirzapur"];
  
+  const handleSoldClick = () => {
+    const payload = { ownerTeam: bidder , status: 'sold'};
+
+    fetch('https://efl2023test.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(payload)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+  }
+
+    
+      
+     // const getRandom = null
   return (
     <div className="App">
       <div className="top-row">
@@ -104,7 +126,7 @@ Auction() {
       ))}
       <button className="action-button">Timer</button>
       <button className="action-button" onClick={handleClick}>Next Player</button>
-      <button className="action-button">Mark Sold</button>
+      <button className="action-button" onClick={handleSoldClick}>Mark Sold</button>
       <button className="action-button">Mark Unsold</button>
       
       
