@@ -1,10 +1,27 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
 import PlayerIntro from './PlayerIntro'
 import PlayerCard from './PlayerCard'
 
 
 export default function 
 Auction() {
+  const [timer, setTimer] = useState(20)
+  const timerId = useRef()
+
+  useEffect(() => {
+    timerId.current = setInterval(() => {
+            setTimer(timer => timer - 1)
+        },1000)
+        return () => clearInterval(timerId.current)
+    }, [timer])
+
+    useEffect(() =>{
+        if (timer <= 0) {
+            clearInterval(timerId.current)
+            console.log('SOLD')
+        }
+    }, [timer])
+
   const [selectedButton, setSelectedButton] = useState(null);
   const [bidder, setBidder] = useState('');
   const [amount, setAmount] = useState(500);
@@ -30,7 +47,8 @@ Auction() {
     "rank": 172
   }
   const [getRandom, setData] = useState(sample);
-
+  const [isflag, setFlag] = useState(false) 
+  
 
   const handleClick = async () => {
     try {
@@ -39,6 +57,8 @@ Auction() {
         const json = await response.json();
         setData(json);
         setAmount(getRandom.salaryNumber)
+        setTimer(20)
+        setFlag(true)
      } else {
        console.log('Error: ' + response.status + response.body);
      }
@@ -46,13 +66,8 @@ Auction() {
       console.error(error);
     }
   };
-
   const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions of Mirzapur"];
  
-
-    
-      
-     // const getRandom = null
   return (
     <div className="App">
       <div className="top-row">
@@ -71,14 +86,20 @@ Auction() {
          <p className='shiny-text'>BID : {amount} lacs</p>
         </div>
       </div>
+      <div>
+        {isflag &&(
+          <div>
+           <h1>Time Remaining: {timer}</h1>
+           </div>) }
+      </div>
       <div className="bottom-row">
       
       {buttonTexts.map((text, index) => (
         <div key={index} className="container-for-team">
           <img src={require('./auction_hand.png')} alt="my-image" className="my-image" style={{ display: selectedButton === index ? 'block' : 'none' }}/>
           <button id= {text}  onClick={() => {setSelectedButton(index)
-          setBidder(text); setAmount(amount+50)}} className="my-button teamButton">{text}</button>
-          
+          setBidder(text); setAmount(amount+50);setTimer(20)}} className="my-button teamButton">{text}</button>
+      
         </div>
       ))}
       <button className="action-button">Timer</button>
