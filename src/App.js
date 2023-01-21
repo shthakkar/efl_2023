@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './style.css';
 import AllPlayers from './AllPlayers';
 import Auction from './Auction';
+import Teams from './Teams';
 
 export default function App() {
   const [page, setPage] = useState('home');
@@ -19,6 +20,7 @@ export default function App() {
       
       {page==="home" && <AllPlayers />}
       {page==="auction" && <Auction />}
+      {page==="owners" && <Teams/>}
     </>
   );
 }
