@@ -2,6 +2,7 @@ import React, { useState, useEffect} from "react";
 import './style.css';
 import DataTable, { createTheme } from 'react-data-table-component';
 import _ from 'lodash'
+import TeamRestrictions from "./TeamRestrictions";
 
 
 export default function Teams() {
@@ -55,6 +56,7 @@ export default function Teams() {
             sortable
             defaultSortFieldId="boughtFor"
           />
+          <TeamRestrictions data={groupedData[groupKey]}/>
         </div>
       ))}
     </div>

@@ -70,9 +70,9 @@ Auction() {
   };
   const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions of Mirzapur"];
  
-  const handleSoldClick = () => {
-    const payload = { ownerTeam: bidder , status: 'sold'};
-
+  const handleSoldClick = (inStatus,inBidder,inAmount) => {
+    const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount};
+    console.log(inStatus,inBidder,inAmount)
     fetch('https://efl2023test.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
       method: 'PUT',
       headers: {
@@ -129,8 +129,8 @@ Auction() {
       ))}
       <button className="action-button">Timer</button>
       <button className="action-button" onClick={handleClick}>Next Player</button>
-      <button className="action-button" onClick={handleSoldClick}>Mark Sold</button>
-      <button className="action-button">Mark Unsold</button>
+      <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)}>Mark Sold</button>
+      <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)}>Mark Unsold</button>
       
       
       </div>
