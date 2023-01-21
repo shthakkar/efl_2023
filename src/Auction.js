@@ -57,6 +57,8 @@ Auction() {
         const json = await response.json();
         setData(json);
         setAmount(getRandom.salaryNumber)
+        setBidder('')
+        setSelectedButton(null)
         setTimer(20)
         setFlag(true)
      } else {
@@ -85,6 +87,7 @@ Auction() {
     .catch(error => {
       console.error(error);
     });
+    setFlag(false)
   }
 
     
