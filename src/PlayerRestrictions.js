@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import CircularNumber from './CircularNumber';
 import ProgressBar from './ProgressBar';
 
 export default function PlayerRestrictions(data) {
@@ -35,12 +36,12 @@ export default function PlayerRestrictions(data) {
     });
 },[]);
     return (
-    <div>
-        <ProgressBar label="Batsmen:" progress = {batsmanCount} max = {4}/>
-        <ProgressBar label="Bowler:" progress = {bowlerCount} max = {4}/>
-        <ProgressBar label="WK:" progress = {keeperCount} max = {1}/>
-        <ProgressBar label="Allrounder:" progress = {allRounderCount} max = {2}/>
-        <ProgressBar label="Foreigner:" progress = {foreignerCount} max = {4}/>
+    <div style={{display:"flex", marginRight: "500px"}}>
+        <CircularNumber text="Batsmen:" progress = {batsmanCount} max = {4}/>
+        <CircularNumber text="Bowler:" progress = {bowlerCount} max = {4}/>
+        <CircularNumber text="WK:" progress = {keeperCount} max = {1}/>
+        <CircularNumber text="Allrounder:" progress = {allRounderCount} max = {2}/>
+        <CircularNumber text="Foreigner:" progress = {foreignerCount} max = {4}/>
     </div>
   )
 }
