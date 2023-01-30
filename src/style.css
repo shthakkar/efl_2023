@@ -141,6 +141,7 @@
     text-shadow: 2px 2px #ffb347; /* adds a subtle shadow to text */
     box-shadow: 0 0 10px #f5b183; /* adds a shiny effect to the background */
     animation: shine 1s ease-in-out infinite; /* adds a shining animation to the background */
+    width: 300px
   }
   
   /* animation keyframes */
