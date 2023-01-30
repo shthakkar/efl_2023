@@ -19,7 +19,7 @@ export default function PlayerRestrictions(data) {
         case 'Bowler':
               setBowlerCount(bowlerCount + 1);
               break;
-        case 'AllRounder':
+        case 'Allrounder':
               setAllRounderCount(allRounderCount + 1);
               break;
         case 'WK-Batter':
