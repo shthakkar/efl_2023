@@ -24,7 +24,7 @@ Auction() {
 
   const [selectedButton, setSelectedButton] = useState(null);
   const [bidder, setBidder] = useState('');
-  const [amount, setAmount] = useState(500);
+  const [amount, setAmount] = useState(20);
   
   const sample = {
     "_id":{"$oid":"63b90a44f4902c26b5359388"},
@@ -89,8 +89,19 @@ Auction() {
     });
     setFlag(false)
   }
+  function increaseAmount()
+  {
+    let increment = 5;
+    if (amount >= 200)
+    {
+      increment = 20;
+    }else if (amount >= 100){
+      increment = 10;
+    }
+    setAmount(amount+increment)
+  }
 
-    
+
       
      // const getRandom = null
   return (
@@ -107,8 +118,8 @@ Auction() {
          franchise={getRandom.iplTeam}/>
         </div>
         <div className="top-row-item">
-         <p className='shiny-text'> Current Bidder: {bidder}</p>
-         <p className='shiny-text'>BID : {amount} lacs</p>
+         <p style={{marginRight:"20px"}} className='shiny-text'> Current Bidder: {bidder}</p>
+         <p className='shiny-text'>BID: {amount} lacs</p>
         </div>
       </div>
       <div>
@@ -123,11 +134,10 @@ Auction() {
         <div key={index} className="container-for-team">
           <img src={require('./auction_hand.png')} alt="my-image" className="my-image" style={{ display: selectedButton === index ? 'block' : 'none' }}/>
           <button id= {text}  onClick={() => {setSelectedButton(index)
-          setBidder(text); setAmount(amount+50);setTimer(20)}} className="my-button teamButton">{text}</button>
+          setBidder(text); increaseAmount();setTimer(20)}} className="my-button teamButton">{text}</button>
       
         </div>
       ))}
-      <button className="action-button">Timer</button>
       <button className="action-button" onClick={handleClick}>Next Player</button>
       <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)}>Mark Sold</button>
       <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)}>Mark Unsold</button>
