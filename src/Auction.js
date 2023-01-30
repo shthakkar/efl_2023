@@ -48,7 +48,27 @@ Auction() {
   }
   const [getRandom, setData] = useState(sample);
   const [isflag, setFlag] = useState(false) 
-  
+  const [ownerToMaxBid, setOwnerToMaxBid] = useState({})
+
+ async function getOwnersData()
+  {
+    try {
+      const response = await fetch('https://efl2023test.azurewebsites.net/getallownersdata');
+      if(response.ok){
+        const json = await response.json();
+        const data = json.reduce((acc, curr) => {
+          acc[curr.ownerName] = {maxBid:curr.maxBid,currentPurse: curr.currentPurse};
+          return acc;
+      }, {});
+        console.log(data)
+        setOwnerToMaxBid(data)
+     } else {
+       console.log('Error: ' + response.status + response.body);
+     }
+    } catch (error) {
+      console.error(error);
+    }
+  }
 
   const handleClick = async () => {
     try {
@@ -61,6 +81,7 @@ Auction() {
         setSelectedButton(null)
         setTimer(20)
         setFlag(true)
+        getOwnersData()
      } else {
        console.log('Error: ' + response.status + response.body);
      }
@@ -68,7 +89,7 @@ Auction() {
       console.error(error);
     }
   };
-  const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions of Mirzapur"];
+  const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions Of Mirzapur"];
  
   const handleSoldClick = (inStatus,inBidder,inAmount) => {
     const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount};
@@ -118,8 +139,13 @@ Auction() {
          franchise={getRandom.iplTeam}/>
         </div>
         <div className="top-row-item">
+          <div>
          <p style={{marginRight:"20px"}} className='shiny-text'> Current Bidder: {bidder}</p>
          <p className='shiny-text'>BID: {amount} lacs</p>
+         <p className='shiny-text'>Current Purse: {ownerToMaxBid[bidder]?.currentPurse} lacs</p>
+         <p className='shiny-text'>Max Bid: {ownerToMaxBid[bidder]?.maxBid} lacs</p>
+
+         </div>
         </div>
       </div>
       <div>
