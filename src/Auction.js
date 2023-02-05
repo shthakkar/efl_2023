@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import PlayerIntro from './PlayerIntro'
 import PlayerCard from './PlayerCard'
+import OwnerStats from './OwnerStats'
 
 
 export default function 
@@ -49,13 +50,14 @@ Auction() {
   const [getRandom, setData] = useState(sample);
   const [isflag, setFlag] = useState(false) 
   const [ownerToMaxBid, setOwnerToMaxBid] = useState({})
-
+  const [ownersData, setOwnersData] = useState()
  async function getOwnersData()
   {
     try {
       const response = await fetch('https://efl2023test.azurewebsites.net/getallownersdata');
       if(response.ok){
         const json = await response.json();
+        setOwnersData(json)
         const data = json.reduce((acc, curr) => {
           acc[curr.ownerName] = {maxBid:curr.maxBid,currentPurse: curr.currentPurse};
           return acc;
@@ -92,7 +94,7 @@ Auction() {
   const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions Of Mirzapur"];
  
   const handleSoldClick = (inStatus,inBidder,inAmount) => {
-    const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount};
+    const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country };
     console.log(inStatus,inBidder,inAmount)
     fetch('https://efl2023test.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
       method: 'PUT',
@@ -129,7 +131,10 @@ Auction() {
     <div className="App">
       <div className="top-row">
         <div className="top-row-item">
+        <div style={{display: "flex", flexDirection:"column"}}>
         <PlayerIntro intro={getRandom.intro}/>
+        {ownersData && <OwnerStats data={ownersData}/> }
+        </div>
         </div>
         <div className="top-row-item">
            { console.log(getRandom.type)}
