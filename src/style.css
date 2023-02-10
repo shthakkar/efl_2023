@@ -105,6 +105,18 @@
     height: 75px;
 
   }
+
+  .button-disabled {
+    background: grayq;
+    background-color: gray;
+    cursor: not-allowed;
+    margin-right: 10px;
+    height: 75px;
+  }
+  
+  
+  
+  
   
   /* Add a hover effect */
   .teamButton:hover {

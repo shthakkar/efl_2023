@@ -62,6 +62,18 @@ Auction() {
           acc[curr.ownerName] = {maxBid:curr.maxBid,currentPurse: curr.currentPurse};
           return acc;
       }, {});
+      const disableMapTemp = json.reduce((map, curr) => {
+        console.log('CURR',curr);
+        // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
+        // set disable to true
+        if(curr.totalCount===15||curr.fCount===6||curr.maxBid<amount)
+        {
+          map[curr.ownerName]=true;
+        }
+        return map;
+    }, {});
+    console.log(disableMapTemp);
+    setDisableMap(disableMapTemp);
         console.log(data)
         setOwnerToMaxBid(data)
      } else {
@@ -78,11 +90,12 @@ Auction() {
       if(response.ok){
         const json = await response.json();
         setData(json);
-        setAmount(getRandom.salaryNumber)
+        setAmount(getRandom.eflBase)
         setBidder('')
         setSelectedButton(null)
         setTimer(20)
         setFlag(true)
+        setFirstClick(true)
         getOwnersData()
      } else {
        console.log('Error: ' + response.status + response.body);
@@ -112,8 +125,16 @@ Auction() {
     });
     setFlag(false)
   }
+  const [firstClick,setFirstClick] = useState(true)
+
   function increaseAmount()
   {
+    // for the first bid set to base price
+    if(firstClick)
+    {
+      setFirstClick(false)
+      return
+    }
     let increment = 5;
     if (amount >= 200)
     {
@@ -122,9 +143,34 @@ Auction() {
       increment = 10;
     }
     setAmount(amount+increment)
+    const disableMapTemp = ownersData.reduce((map, curr) => {
+      console.log('CURR',curr);
+      // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
+      // set disable to true
+      if(curr.totalCount===15||curr.fCount===6||curr.maxBid<amount)
+      {
+        map[curr.ownerName]=true;
+      }
+      return map;
+  }, {});
+  console.log(disableMapTemp);
+  setDisableMap(disableMapTemp);
   }
+/*
+  function shouldBeEnabled(teamName){
+    const currentRole = getRandom.role;
+    const currentCountry = getRandom.country;
+    const ownerForeignerCount = getOwnerAttr(teamName);
+    const ownerRoleCount = getOwnerAttr(teamName, currentRole);
+
+    if(currentCountry.toLowerCase()!="india" && ownerForeignerCount>=6){
+      return false;
+    }
 
 
+    
+  }*/
+const [disableMap, setDisableMap] = useState({})
       
      // const getRandom = null
   return (
@@ -164,8 +210,8 @@ Auction() {
       {buttonTexts.map((text, index) => (
         <div key={index} className="container-for-team">
           <img src={require('./auction_hand.png')} alt="my-image" className="my-image" style={{ display: selectedButton === index ? 'block' : 'none' }}/>
-          <button id= {text}  onClick={() => {setSelectedButton(index)
-          setBidder(text); increaseAmount();setTimer(20)}} className="my-button teamButton">{text}</button>
+          <button id= {text} disabled={disableMap[text]} onClick={() => {setSelectedButton(index)
+          setBidder(text); increaseAmount();setTimer(20)}} className={`${disableMap[text] ? "button-disabled" : "my-button teamButton"}`}>{text}</button>
       
         </div>
       ))}

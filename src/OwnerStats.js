@@ -2,15 +2,6 @@ import React from 'react'
 import DataTable from 'react-data-table-component';
 
 export default function OwnerStats(props) {
-    const columns = [
-        { selector: row => row['ownerName'], name: 'Owner' , sortable: true, width: '100px'},
-        { selector: row => row['batCount'], name: 'Bat' , sortable: true},
-        { selector: row => row['ballCount'], name: 'Bowl' , sortable: true},
-        { selector: row => row['wkCount'], name: 'WK' , sortable: true},
-        { selector: row => row['arCount'], name: 'AR', sortable: true },
-        { selector: row => row['fCount'], name: 'INTL', sortable: true },
-        
-        ];
         const customStyles = {
             rows: {
                 style: {
@@ -26,12 +17,16 @@ export default function OwnerStats(props) {
             }
             
         };
-        const cols = ['Owner', 'Bat(4)','Bowl(4)','WK(1)','AR(2)','I(4-6)'];
+        const cols = ['Owner', 'Bat(4)','Bowl(4)','WK(1)','AR(2)','I(4-6)', 'Sq(15)'];
         console.log(props.data)
         function makeAbv(string) {
             const words = string.split(' ');
             return words.map(word => word[0].toUpperCase());
           }
+        const countStyle = {marginRight:'10px', width: '50px', color: '#3498db',
+    };
+    const countStyleGreen = {marginRight:'10px', width: '50px', color: 'white', backgroundColor: 'lightGreen'
+    };
   return (
     // TITLE
     <div style={{display:'flex',  marginRight:'10px'}}>
@@ -44,18 +39,13 @@ export default function OwnerStats(props) {
             </div>
              {props.data.map((item, index) => (
             <div style={{display:'flex', flexDirection:'row', marginRight:'10px'}} key={index}>
-                <div style={{marginRight:'10px', width: '50px', color: '#3498db',
-}}>{makeAbv(item.ownerName)}</div>
-                <div style={{marginRight:'10px', width: '50px', color: '#3498db',
-}}>{item.batCount}</div>
-                <div style={{marginRight:'10px', width: '50px', color: '#3498db',
-}}>{item.ballCount}</div>
-                <div style={{marginRight:'10px', width: '50px', color: '#3498db',
-}}>{item.wkCount}</div>
-                <div style={{marginRight:'10px', width: '50px', color: '#3498db',
-}}>{item.arCount}</div>
-                <div style={{marginRight:'10px', width: '50px', color: '#3498db',
-}}>{item.fCount}</div>
+                <div style={countStyle}>{makeAbv(item.ownerName)}</div>
+                <div style={item.batCount >= 4 ? countStyleGreen : countStyle}>{item.batCount}</div>
+                <div style={item.ballCount >= 4 ? countStyleGreen : countStyle}>{item.ballCount}</div>
+                <div style={item.wkCount >= 1 ? countStyleGreen : countStyle}>{item.wkCount}</div>
+                <div style={item.arCount >= 2 ? countStyleGreen : countStyle}>{item.arCount}</div>
+                <div style={item.fCount >= 4 ? countStyleGreen : countStyle}>{item.fCount}</div>
+                <div style={item.totalCount >= 15 ? countStyleGreen : countStyle}>{item.totalCount}</div>
                 </div>
             ))}
             </div>
