@@ -107,7 +107,7 @@
   }
 
   .button-disabled {
-    background: grayq;
+    background: gray;
     background-color: gray;
     cursor: not-allowed;
     margin-right: 10px;
@@ -168,22 +168,36 @@
   
   /* Define the button style */
 .action-button {
-  background-color: #4CAF50; /* Green background */
-  border: none; /* Remove border */
-  color: white; /* White text */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Center text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Display as inline block element */
-  font-size: 16px; /* Set font size */
-  margin: 4px 2px; /* Add some margin */
-  cursor: pointer; /* Add cursor as pointer */
+  display: inline-block;
+  padding: 15px 32px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border-radius: 10px;
+  border: none;
+  margin: 4px 2px;
 }
 
 /* Add hover effect */
 .action-button:hover {
   background-color: #3e8e41; /* Darken background on hover */
 }
+
+.action-button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+
+.action-button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  transform: translateY(4px);
+}
+
 .circular-number {
   position: relative;
   display: inline-block;
@@ -207,3 +221,55 @@
 .circular-number-text {
   color: #fff;
 }
+
+/*Animations for sold text*/
+.sold-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: red;
+  text-align: center; /* center align text */
+  font-size: 50px; /* large font size */
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.sold-text.show {
+  opacity: 1;
+}
+
+.unsold-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: grey;
+  text-align: center; /* center align text */
+  font-size: 50px; /* large font size */
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.unsold-text.show {
+  opacity: 1;
+}
+
+.time-text {
+  position: absolute;
+  color: black;
+  text-align: center; /* center align text */
+  font-size: 30px; /* large font size */
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+  right: 9px;
+  left: 84px;
+}
+
+.time-text.show {
+  opacity: 1;
+}
+
