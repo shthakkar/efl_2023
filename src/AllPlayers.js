@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect} from "react";
 import './style.css';
-import players from './players.json';
 import DataTable, { createTheme } from 'react-data-table-component';
 
+
 export default function AllPlayers() {
+  const [Allplayers,setAllPlayerslist] = useState([]);
+  useEffect(() => {
+    async function getallplayerslist(){
+        try {
+            const response = await fetch('https://efl2023test.azurewebsites.net/getallplayers');
+            if(response.ok){
+                const data = await response.json();
+                //console.log(data)
+                setAllPlayerslist(data);
+            } else {
+                console.log('Error: ' + response.status + response.body);
+            }
+        } catch (error) {
+        console.error(error);
+        }
+
+      }
+      getallplayerslist();
+  },[])
+  const players = Allplayers.filter(item =>item.status!=='sold')
   const rows = players;
   const customStyles = {
     rows: {
@@ -86,10 +106,10 @@ export default function AllPlayers() {
     { selector: (row) => row['name'], name: 'Name' , sortable: true},
     { selector: (row) => row['iplTeam'], name: 'IPL Team' , sortable: true},
     { selector: (row) => row['status'], name: 'Status' , sortable: true},
-
     { selector: (row) => row['role'], name: 'Role' , sortable: true},
     { selector: (row) => row['country'], name: 'Country' , sortable: true},
     { selector: (row) => row['tier'], name: 'Tier', sortable: true },
+    { selector: (row) => row['points'], name: 'Points' , sortable: true},
     { selector: (row) => row['salaryNumber'], name: 'Salary', sortable: true },
     {
       id: 'eflBase',
