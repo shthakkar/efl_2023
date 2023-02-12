@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import PlayerIntro from './PlayerIntro'
 import PlayerCard from './PlayerCard'
 import OwnerStats from './OwnerStats'
+import './style.css'; 
 
 
 export default function 
@@ -19,7 +20,6 @@ Auction() {
     useEffect(() =>{
         if (timer <= 0) {
             clearInterval(timerId.current)
-            console.log('SOLD')
         }
     }, [timer])
 
@@ -51,6 +51,10 @@ Auction() {
   const [isflag, setFlag] = useState(false) 
   const [ownerToMaxBid, setOwnerToMaxBid] = useState({})
   const [ownersData, setOwnersData] = useState()
+  const [isSold, setIsSold] = useState(false);
+  const [isunSold, setIsunSold] = useState(false);
+  const [buttonSold, setButtonSold] = useState(true);
+  const [buttonunSold, setButtonUnSold] = useState(true);
  async function getOwnersData()
   {
     try {
@@ -90,12 +94,16 @@ Auction() {
       if(response.ok){
         const json = await response.json();
         setData(json);
-        setAmount(getRandom.eflBase)
+        setAmount(json.eflBase)
         setBidder('')
         setSelectedButton(null)
         setTimer(20)
         setFlag(true)
         setFirstClick(true)
+        setIsSold(false)
+        setIsunSold(false)
+        setButtonSold(false)
+        setButtonUnSold(false)
         getOwnersData()
      } else {
        console.log('Error: ' + response.status + response.body);
@@ -105,10 +113,21 @@ Auction() {
     }
   };
   const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions Of Mirzapur"];
- 
+  
+
   const handleSoldClick = (inStatus,inBidder,inAmount) => {
     const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country };
     console.log(inStatus,inBidder,inAmount)
+    if (inStatus === 'sold')
+    {
+      setIsSold(true)
+      setButtonSold(true)
+    }
+    else
+    {
+      setIsunSold(true)
+      setButtonUnSold(true)
+    }
     fetch('https://efl2023test.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
       method: 'PUT',
       headers: {
@@ -201,10 +220,15 @@ const [disableMap, setDisableMap] = useState({})
       </div>
       <div>
         {isflag &&(
-          <div>
-           <h1>Time Remaining: {timer}</h1>
-           </div>) }
+          <div className="time-text show">Time Remaining: {timer}</div>) }
       </div>
+      <div>
+        {isSold && <div className="sold-text show">SOLD</div>}
+      </div>
+      <div>
+        {isunSold && <div className="unsold-text show">UNSOLD</div>}
+      </div>
+
       <div className="bottom-row">
       
       {buttonTexts.map((text, index) => (
@@ -216,8 +240,8 @@ const [disableMap, setDisableMap] = useState({})
         </div>
       ))}
       <button className="action-button" onClick={handleClick}>Next Player</button>
-      <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)}>Mark Sold</button>
-      <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)}>Mark Unsold</button>
+      <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)} disabled={buttonSold}>Mark Sold</button>
+      <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)} disabled={buttonunSold}>Mark Unsold</button>
       
       
       </div>
