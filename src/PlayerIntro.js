@@ -5,11 +5,12 @@ export default function PlayerIntro(props) {
         container: {
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center'
+          alignItems: 'left',
+          justifyContent: 'left',
+          border:'1px solid black'
         },
         name: {
-          fontSize: '1.5em',
+          fontSize: '1.2em',
           fontWeight: 'bold',
           color: '#3498db',
           margin: '10px 0'
