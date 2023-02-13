@@ -11,27 +11,37 @@ export default function PlayerRestrictions(data) {
     const [foreignerCount, setForeignerCount] = useState(0);
     
     useEffect(() => {
+      setBatsmanCount(0);
+      setBowlerCount(0);
+      setAllRounderCount(0);
+      setKeeperCount(0);
+      setForeignerCount(0);
     data.data.forEach(function (item) {
       switch (item.role) {
         case 'Batter':
-              setBatsmanCount(batsmanCount + 1);
+              setBatsmanCount(prev=>prev + 1);
               break;
         case 'Bowler':
-              setBowlerCount(bowlerCount + 1);
+              setBowlerCount(prev=>prev + 1);
               break;
         case 'Allrounder':
-              setAllRounderCount(allRounderCount + 1);
+              setAllRounderCount(prev=>prev + 1);
               break;
         case 'WK-Batter':
-              setKeeperCount(keeperCount + 1);
-              setBatsmanCount(batsmanCount + 1);
+              setKeeperCount(prev=>prev + 1);
+              setBatsmanCount(prev=>prev + 1);
               break;
         default:
               break;
       }
       if(item.country != "India")
       {
-          setForeignerCount(foreignerCount+1);
+          setForeignerCount(prev=>prev+1);
+          if(item.ownerTeam === "Gajjab Gujjus")
+          {
+            console.log(item)
+          }
+          
       }
     });
 },[]);
