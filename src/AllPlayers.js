@@ -8,7 +8,7 @@ export default function AllPlayers() {
   useEffect(() => {
     async function getallplayerslist(){
         try {
-            const response = await fetch('https://efl2023test.azurewebsites.net/getallplayers');
+            const response = await fetch('https://testefl2023.azurewebsites.net/getallplayers');
             if(response.ok){
                 const data = await response.json();
                 //console.log(data)
