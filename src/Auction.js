@@ -58,7 +58,7 @@ Auction() {
  async function getOwnersData()
   {
     try {
-      const response = await fetch('https://efl2023test.azurewebsites.net/getallownersdata');
+      const response = await fetch('https://testefl2023.azurewebsites.net/getallownersdata');
       if(response.ok){
         const json = await response.json();
         setOwnersData(json)
@@ -90,7 +90,7 @@ Auction() {
 
   const handleClick = async () => {
     try {
-      const response = await fetch('https://efl2023test.azurewebsites.net/getplayer');
+      const response = await fetch('https://testefl2023.azurewebsites.net/getplayer');
       if(response.ok){
         const json = await response.json();
         setData(json);
@@ -128,7 +128,7 @@ Auction() {
       setIsunSold(true)
       setButtonUnSold(true)
     }
-    fetch('https://efl2023test.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
+    fetch('https://testefl2023.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
