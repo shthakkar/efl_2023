@@ -8,7 +8,7 @@ import TeamRestrictions from "./TeamRestrictions";
 export default function Teams() {
     const [Playerslist, setPlayerslist] = useState([]);
     
-    const customTableStyles = {
+    const customStyles = {
     rows: {
       style: {
         maxHeight: '10px',
@@ -79,7 +79,7 @@ export default function Teams() {
           <DataTable
             data={groupedData[groupKey]}
             columns={columns}
-            customTableStyles = {customTableStyles}
+            customStyles = {customStyles}
             sortable
             defaultSortFieldId="boughtFor"
           />
