@@ -190,7 +190,18 @@ Auction() {
     
   }*/
 const [disableMap, setDisableMap] = useState({})
-      
+const [editing, setEditing] = useState(false);
+const handleDoubleClick = () => {
+  setEditing(true);
+};
+
+const handleBlur = () => {
+  setEditing(false);
+};
+
+const handleChange = event => {
+  setAmount(event.target.value);
+};
      // const getRandom = null
   return (
     <div className="App">
@@ -211,7 +222,21 @@ const [disableMap, setDisableMap] = useState({})
         <div className="top-row-item">
           <div>
          <p style={{marginRight:"20px"}} className='shiny-text'> Current Bidder: {bidder}</p>
-         <p className='shiny-text'>BID: {amount} lacs</p>
+         <div className="editable-amount">
+      {editing ? (
+        <input
+          type="text"
+          value={amount}
+          onBlur={handleBlur}
+          onChange={handleChange}
+        />
+      ) : (
+        <p className="shiny-text" onDoubleClick={handleDoubleClick}>
+          BID: {amount} lacs
+        </p>
+      )}
+    </div>
+  
          <p className='shiny-text'>Current Purse: {ownerToMaxBid[bidder]?.currentPurse} lacs</p>
          <p className='shiny-text'>Max Bid: {ownerToMaxBid[bidder]?.maxBid} lacs</p>
 
