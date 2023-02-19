@@ -146,7 +146,7 @@ Auction() {
   }
   const [firstClick,setFirstClick] = useState(true)
 
-  function increaseAmount()
+  function increaseAmount(playercountry)
   {
     // for the first bid set to base price
     if(firstClick)
@@ -166,7 +166,7 @@ Auction() {
       console.log('CURR',curr);
       // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
       // set disable to true
-      if(curr.totalCount===15||curr.fCount===6||curr.maxBid<amount)
+      if(curr.totalCount===15||(curr.fCount===6 && playercountry!=='India')||curr.maxBid<amount)
       {
         map[curr.ownerName]=true;
       }
@@ -260,7 +260,7 @@ const handleChange = event => {
         <div key={index} className="container-for-team">
           <img src={require('./auction_hand.png')} alt="my-image" className="my-image" style={{ display: selectedButton === index ? 'block' : 'none' }}/>
           <button id= {text} disabled={disableMap[text]} onClick={() => {setSelectedButton(index)
-          setBidder(text); increaseAmount();setTimer(20)}} className={`${disableMap[text] ? "button-disabled" : "my-button teamButton"}`}>{text}</button>
+          setBidder(text); increaseAmount(getRandom.country);setTimer(20)}} className={`${disableMap[text] ? "button-disabled" : "my-button teamButton"}`}>{text}</button>
       
         </div>
       ))}
