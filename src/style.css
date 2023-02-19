@@ -108,6 +108,7 @@
 
   .button-disabled {
     background: gray;
+    border-radius: 10px;
     background-color: gray;
     cursor: not-allowed;
     margin-right: 10px;
