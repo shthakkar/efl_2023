@@ -55,7 +55,7 @@ Auction() {
   const [isunSold, setIsunSold] = useState(false);
   const [buttonSold, setButtonSold] = useState(true);
   const [buttonunSold, setButtonUnSold] = useState(true);
- async function getOwnersData()
+ async function getOwnersData(prop)
   {
     try {
       const response = await fetch('https://testefl2023.azurewebsites.net/getallownersdata');
@@ -70,7 +70,7 @@ Auction() {
         console.log('CURR',curr);
         // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
         // set disable to true
-        if(curr.totalCount===15||curr.fCount===6||curr.maxBid<amount)
+        if(curr.totalCount===15||(curr.fCount===6 && prop !=='India')||curr.maxBid<amount)
         {
           map[curr.ownerName]=true;
         }
@@ -104,7 +104,7 @@ Auction() {
         setIsunSold(false)
         setButtonSold(false)
         setButtonUnSold(false)
-        getOwnersData()
+        getOwnersData(json.country)
      } else {
        console.log('Error: ' + response.status + response.body);
      }
