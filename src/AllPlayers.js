@@ -79,24 +79,28 @@ export default function AllPlayers() {
     {
       when: (row) => row.tier === 1,
       style: {
+        border: '1px solid black',
         backgroundColor: getRandomColor(),
       },
     },
     {
       when: (row) => row.tier === 2,
       style: {
+        border: '1px solid black',
         backgroundColor: getRandomColor(),
       },
     },
     {
       when: (row) => row.tier === 3,
       style: {
+        border: '1px solid black',
         backgroundColor: getRandomColor(),
       },
     },
     {
       when: (row) => row.tier === 4,
       style: {
+        border: '1px solid black',
         backgroundColor: getRandomColor(),
       },
     },
