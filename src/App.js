@@ -3,7 +3,7 @@ import './style.css';
 import AllPlayers from './AllPlayers';
 import Auction from './Auction';
 import Teams from './Teams';
-import CircularNumber from './CircularNumber';
+import Dailyscore from './Dailyscore';
 import Login from './Login';
 import { Route, Routes } from 'react-router-dom'
 
@@ -58,7 +58,7 @@ export default function App() {
           <Route path="/home" element={<AllPlayers />} />
           <Route path="/login" element={<Login />} />
           <Route path="/owners" element={<Teams />} />
-          <Route path="/daily" element={<CircularNumber />} />
+          <Route path="/daily" element={<Dailyscore />} />
           <Route path="/auction" element={<Auction />} />
         </Routes>
     </div>
