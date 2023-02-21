@@ -36,7 +36,7 @@ Auction() {
     "role": "Type",
     "intro": [
       "intro1",
-      "intro2",
+      " intro2",
       " intro3"
     ],
     "country": "Country Name",
@@ -70,7 +70,7 @@ Auction() {
         console.log('CURR',curr);
         // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
         // set disable to true
-        if(curr.totalCount===15||(curr.fCount===6 && prop !=='India')||curr.maxBid<amount)
+        if(curr.totalCount===15||(curr.fCount===6 && prop !== 'India')||curr.maxBid<amount)
         {
           map[curr.ownerName]=true;
         }
@@ -166,7 +166,7 @@ Auction() {
       console.log('CURR',curr);
       // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
       // set disable to true
-      if(curr.totalCount===15||(curr.fCount===6 && playercountry!=='India')||curr.maxBid<amount)
+      if(curr.totalCount===15||(curr.fCount===6 && playercountry !== 'India')||curr.maxBid<amount)
       {
         map[curr.ownerName]=true;
       }
@@ -206,22 +206,24 @@ const handleChange = event => {
   return (
     <div className="App">
       <div className="top-row">
-        <div className="top-row-item">
-        <div style={{display: "flex", flexDirection:"column"}}>
-        <PlayerIntro intro={getRandom.intro}/>
-        {ownersData && <OwnerStats data={ownersData}/> }
-        </div>
-        </div>
-        <div className="top-row-item">
+      <div className="owner-table-item">
+          <div style={{display: "flex", flexDirection:"column",position:"relative",marginTop:"15px"}}>
+          {ownersData && <OwnerStats data={ownersData}/> }
+          </div>
+      </div>
+        <div className="top-row-item" style={{position:"relative",marginTop:"15px"}}>
            { console.log(getRandom.type)}
          <PlayerCard playerName={getRandom.name}
          country={getRandom.country} 
+         intro1={getRandom.intro[0]}
+         intro2={getRandom.intro[1]}
+         intro3={getRandom.intro[2]}
          type={getRandom.role} 
          franchise={getRandom.iplTeam}/>
         </div>
         <div className="top-row-item">
           <div>
-         <p style={{marginRight:"20px"}} className='shiny-text'> Current Bidder: {bidder}</p>
+         <p style={{marginTop:"15px",marginRight:"20px"}} className='shiny-text'> Current Bidder: {bidder}</p>
          <div className="editable-amount">
       {editing ? (
         <input
@@ -243,7 +245,7 @@ const handleChange = event => {
          </div>
         </div>
       </div>
-      <div>
+      <div style={{display: "flex",position:"relative",bottom:"-30px",alignItems:"center",color: timer <= '5' ? 'red':'black' }}>
         {isflag &&(
           <div className="time-text show">Time Remaining: {timer}</div>) }
       </div>
@@ -254,11 +256,11 @@ const handleChange = event => {
         {isunSold && <div className="unsold-text show">UNSOLD</div>}
       </div>
 
-      <div className="bottom-row">
+      <div className="bottom-row" style={{position:"relative",bottom:"-40px"}}>
       
       {buttonTexts.map((text, index) => (
         <div key={index} className="container-for-team">
-          <img src={require('./auction_hand.png')} alt="my-image" className="my-image" style={{ display: selectedButton === index ? 'block' : 'none' }}/>
+          <img src={require('./auction_hand.png')} alt="my-image" className="my-image" style={{ display: selectedButton === index ? 'block' : 'none'}}/>
           <button id= {text} disabled={disableMap[text]} onClick={() => {setSelectedButton(index)
           setBidder(text); increaseAmount(getRandom.country);setTimer(20)}} className={`${disableMap[text] ? "button-disabled" : "my-button teamButton"}`}>{text}</button>
       
