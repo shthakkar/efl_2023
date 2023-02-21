@@ -44,6 +44,13 @@
     align-items: center;
     justify-content: center;
   }
+
+  .owner-table-item {
+    flex: 1;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+  }
   
   .bottom-row {
     flex: 0.1;
@@ -91,6 +98,12 @@
     letter-spacing: 2px;
   }
   
+  .player-intro {
+    color: #0c04f7; /* Deep purple color */
+    display: flex;
+    flex-direction: row;
+  }
+
   /* Add a subtle gradient and rounded edges */
 .teamButton {
     background: linear-gradient(to bottom, #ff7f00, #ff5500);
@@ -260,7 +273,6 @@
 
 .time-text {
   position: absolute;
-  color: black;
   text-align: center; /* center align text */
   font-size: 30px; /* large font size */
   font-weight: bold;
