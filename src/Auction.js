@@ -89,22 +89,30 @@ Auction() {
   }
 
   const handleClick = async () => {
+    if(requestedPlayer!="")
+    {
+      try{
+      const response = await fetch('https://testefl2023.azurewebsites.net/getspecificplayer/'+requestedPlayer);
+      if(response.ok)
+      {
+        const json = await response.json();
+        actionsAfterGetPlayer(json);
+     } else {
+       console.log('Error: ' + response.status + response.body);
+     }
+      
+
+      }catch (error) {
+        console.error(error);
+      }
+      return
+      
+    }
     try {
       const response = await fetch('https://testefl2023.azurewebsites.net/getplayer');
       if(response.ok){
         const json = await response.json();
-        setData(json);
-        setAmount(json.eflBase)
-        setBidder('')
-        setSelectedButton(null)
-        setTimer(20)
-        setFlag(true)
-        setFirstClick(true)
-        setIsSold(false)
-        setIsunSold(false)
-        setButtonSold(false)
-        setButtonUnSold(false)
-        getOwnersData(json.country)
+        actionsAfterGetPlayer(json);
      } else {
        console.log('Error: ' + response.status + response.body);
      }
@@ -145,6 +153,22 @@ Auction() {
     setFlag(false)
   }
   const [firstClick,setFirstClick] = useState(true)
+
+  function actionsAfterGetPlayer(json) {
+    setData(json);
+    setAmount(json.eflBase);
+    setBidder('');
+    setSelectedButton(null);
+    setTimer(20);
+    setFlag(true);
+    setFirstClick(true);
+    setIsSold(false);
+    setIsunSold(false);
+    setButtonSold(false);
+    setButtonUnSold(false);
+    setRequestedPlayerChange("");
+    getOwnersData(json.country);
+  }
 
   function increaseAmount(playercountry)
   {
@@ -201,6 +225,11 @@ const handleBlur = () => {
 
 const handleChange = event => {
   setAmount(event.target.value);
+};
+
+const [requestedPlayer, setRequestedPlayerChange] = useState("");
+const handleRequestedPlayerChange = event => {
+  setRequestedPlayerChange(event.target.value);
 };
      // const getRandom = null
   return (
@@ -266,7 +295,11 @@ const handleChange = event => {
       
         </div>
       ))}
+      <div style={{display: 'flex', flexDirection: 'column'}}>
+        
       <button className="action-button" onClick={handleClick}>Next Player</button>
+      <input type="text" value={requestedPlayer} onChange={handleRequestedPlayerChange}/>
+      </div>
       <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)} disabled={buttonSold}>Mark Sold</button>
       <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)} disabled={buttonunSold}>Mark Unsold</button>
       
