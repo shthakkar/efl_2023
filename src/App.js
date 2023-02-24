@@ -18,33 +18,33 @@ export default function App() {
       const storedTime = new Date(stored);
       if (isNaN(storedTime)) {
         // handle invalid stored timestamp
-        window.location.href = '/login';
+        window.location.href = `${process.env.PUBLIC_URL}/#/login`;
         return;
       }
       diff = (timestamp.getTime() - storedTime.getTime()) / 3600000;
       if (diff >= 24) {
         // navigate to login page if more than 24 hours
-        window.location.href = '/login';
+        window.location.href = `${process.env.PUBLIC_URL}/#/login`;
         return;
       }
     } else {
       // navigate to login page if timestamp is missing
-      window.location.href = '/login';
+      window.location.href = `${process.env.PUBLIC_URL}/#/login`;
       return;
     }
 
     // navigate to auction page if less than 24 hours
-    window.location.href = '/auction';
+    window.location.href = `${process.env.PUBLIC_URL}/#/auction`;
   };
 
   const navigateHome = () => {
-    window.location.href = '/home';
+    window.location.href = `${process.env.PUBLIC_URL}/#/home`;
   };
   const navigateToOwners = () => {
-    window.location.href = '/owners';
+    window.location.href = `${process.env.PUBLIC_URL}/#/owners`;
   };
   const navigateToDailyScore = () => {
-    window.location.href = '/daily';
+    window.location.href = `${process.env.PUBLIC_URL}/#/daily`;
   };
   return (
     <div>
@@ -55,6 +55,7 @@ export default function App() {
           <button className="mainButton" onClick={navigateToDailyScore}>Daily Score</button>
         </div>
         <Routes>
+          <Route path="/" element={<h1 style={{color:"black",fontSize:"300%",justifyItems:"center"}}>Welcome To EFL 2023</h1>} />
           <Route path="/home" element={<AllPlayers />} />
           <Route path="/login" element={<Login />} />
           <Route path="/owners" element={<Teams />} />
