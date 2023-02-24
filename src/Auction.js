@@ -233,6 +233,7 @@ const handleRequestedPlayerChange = event => {
   setRequestedPlayerChange(event.target.value);
 };
 
+/*
 const handleSetup = () => 
 {
   fetch('https://testefl2023.azurewebsites.net/setup', {
@@ -249,7 +250,7 @@ const handleSetup = () =>
     .catch(error => {
       console.error(error);
     });
-}
+}*/
      // const getRandom = null
   return (
     <div className="App">
@@ -322,7 +323,6 @@ const handleSetup = () =>
       </div>
       <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)} disabled={buttonSold}>Mark Sold</button>
       <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)} disabled={buttonunSold}>Mark Unsold</button>
-      <button className="action-button" onClick={()=>handleSetup()} disabled={buttonunSold}>Setup Teams</button>
 
       
       </div>
