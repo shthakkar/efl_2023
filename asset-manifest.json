@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/home/static/css/main.4f567706.css",
-    "main.js": "/home/static/js/main.785b5e8a.js",
+    "main.js": "/home/static/js/main.9a399e20.js",
     "static/js/787.0a3d61e4.chunk.js": "/home/static/js/787.0a3d61e4.chunk.js",
     "static/media/auction_hand.png": "/home/static/media/auction_hand.5f736284011b0c5b66bf.png",
     "index.html": "/home/index.html",
     "main.4f567706.css.map": "/home/static/css/main.4f567706.css.map",
-    "main.785b5e8a.js.map": "/home/static/js/main.785b5e8a.js.map",
+    "main.9a399e20.js.map": "/home/static/js/main.9a399e20.js.map",
     "787.0a3d61e4.chunk.js.map": "/home/static/js/787.0a3d61e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4f567706.css",
-    "static/js/main.785b5e8a.js"
+    "static/js/main.9a399e20.js"
   ]
 }
