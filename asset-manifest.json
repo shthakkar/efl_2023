@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/efl_2023/static/css/main.2001988e.css",
-    "main.js": "/efl_2023/static/js/main.d1aff9e6.js",
+    "main.js": "/efl_2023/static/js/main.c43adee8.js",
     "static/js/787.0a3d61e4.chunk.js": "/efl_2023/static/js/787.0a3d61e4.chunk.js",
     "static/media/auction_hand.png": "/efl_2023/static/media/auction_hand.5f736284011b0c5b66bf.png",
     "index.html": "/efl_2023/index.html",
     "main.2001988e.css.map": "/efl_2023/static/css/main.2001988e.css.map",
-    "main.d1aff9e6.js.map": "/efl_2023/static/js/main.d1aff9e6.js.map",
+    "main.c43adee8.js.map": "/efl_2023/static/js/main.c43adee8.js.map",
     "787.0a3d61e4.chunk.js.map": "/efl_2023/static/js/787.0a3d61e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2001988e.css",
-    "static/js/main.d1aff9e6.js"
+    "static/js/main.c43adee8.js"
   ]
 }
