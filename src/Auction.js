@@ -3,7 +3,7 @@ import PlayerIntro from './PlayerIntro'
 import PlayerCard from './PlayerCard'
 import OwnerStats from './OwnerStats'
 import './style.css'; 
-
+import settings from './settings.json'
 
 export default function 
 Auction() {
@@ -70,7 +70,7 @@ Auction() {
         console.log('CURR',curr);
         // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
         // set disable to true
-        if(curr.totalCount===15||(curr.fCount===6 && prop !== 'India')||curr.maxBid<amount)
+        if(curr.totalCount===settings.squadSize||(curr.fCount===6 && prop !== 'India')||curr.maxBid<amount)
         {
           map[curr.ownerName]=true;
         }
@@ -120,7 +120,7 @@ Auction() {
       console.error(error);
     }
   };
-  const buttonTexts = ["Gajjab Gujjus", "Bhaisaab's Royal Fixers", "My Lord Dilwale", "Dad's Army", "One Pitch One Hand", "Untouchaballs", "Lions Of Mirzapur"];
+  const buttonTexts = settings.setup.teamNames;
   
 
   const handleSoldClick = (inStatus,inBidder,inAmount) => {
@@ -190,7 +190,7 @@ Auction() {
       console.log('CURR',curr);
       // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
       // set disable to true
-      if(curr.totalCount===15||(curr.fCount===6 && playercountry !== 'India')||curr.maxBid<amount)
+      if(curr.totalCount===settings.squadSize||(curr.fCount===6 && playercountry !== 'India')||curr.maxBid<amount)
       {
         map[curr.ownerName]=true;
       }
@@ -231,6 +231,24 @@ const [requestedPlayer, setRequestedPlayerChange] = useState("");
 const handleRequestedPlayerChange = event => {
   setRequestedPlayerChange(event.target.value);
 };
+
+const handleSetup = () => 
+{
+  fetch('https://testefl2023.azurewebsites.net/setup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(settings.setup)
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+    })
+    .catch(error => {
+      console.error(error);
+    });
+}
      // const getRandom = null
   return (
     <div className="App">
@@ -302,7 +320,8 @@ const handleRequestedPlayerChange = event => {
       </div>
       <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)} disabled={buttonSold}>Mark Sold</button>
       <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)} disabled={buttonunSold}>Mark Unsold</button>
-      
+      <button className="action-button" onClick={()=>handleSetup()} disabled={buttonunSold}>Setup Teams</button>
+
       
       </div>
     </div>

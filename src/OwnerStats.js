@@ -1,5 +1,6 @@
 import React from 'react'
 import DataTable from 'react-data-table-component';
+import settings from './settings.json'
 
 export default function OwnerStats(props) {
   const customStyles = {
@@ -73,10 +74,10 @@ export default function OwnerStats(props) {
       height: '50%' }}>{row.fCount}</div>,
     },
     {
-      name: 'Sq(15)',
+      name: 'Sq('+settings.squadSize+')',
       selector: row=> row.totalCount,
       width:'80px',
-      cell: row => <div style={{ backgroundColor: row.totalCount >= 15 ? 'lightgreen' : 'white',textAlign:'center', padding: '4px',width: '50%',
+      cell: row => <div style={{ backgroundColor: row.totalCount >= settings.squadSize ? 'lightgreen' : 'white',textAlign:'center', padding: '4px',width: '50%',
       height: '50%' }}>{row.totalCount}</div>,
     },
   ];
