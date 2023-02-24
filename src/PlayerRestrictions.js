@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import CircularNumber from './CircularNumber';
-import ProgressBar from './ProgressBar';
 
 export default function PlayerRestrictions(data) {
     const [batsmanCount, setBatsmanCount] = useState(0);
@@ -34,7 +33,7 @@ export default function PlayerRestrictions(data) {
         default:
               break;
       }
-      if(item.country != "India")
+      if(item.country !== "India")
       {
           setForeignerCount(prev=>prev+1);
           if(item.ownerTeam === "Gajjab Gujjus")
