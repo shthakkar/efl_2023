@@ -71,6 +71,7 @@ export default function Teams() {
       },
     ];
 
+  if(groupedsoldPlayers.length){
   return (
     <div>
       {Object.keys(groupedData).map(groupKey => (
@@ -88,6 +89,11 @@ export default function Teams() {
       ))}
     </div>
   );
+}
+else{
+
+  return(<h2>No data to display</h2>)
+}
 }
 
 
