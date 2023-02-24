@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from 'react';
-import PlayerIntro from './PlayerIntro'
 import PlayerCard from './PlayerCard'
 import OwnerStats from './OwnerStats'
 import './style.css'; 
@@ -89,7 +88,7 @@ Auction() {
   }
 
   const handleClick = async () => {
-    if(requestedPlayer!="")
+    if(requestedPlayer!=="")
     {
       try{
       const response = await fetch('https://testefl2023.azurewebsites.net/getspecificplayer/'+requestedPlayer);

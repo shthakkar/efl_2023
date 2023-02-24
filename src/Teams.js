@@ -1,6 +1,6 @@
 import React, { useState, useEffect} from "react";
 import './style.css';
-import DataTable, { createTheme } from 'react-data-table-component';
+import DataTable from 'react-data-table-component';
 import _ from 'lodash'
 import TeamRestrictions from "./TeamRestrictions";
 
