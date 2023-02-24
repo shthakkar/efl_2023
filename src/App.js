@@ -5,6 +5,8 @@ import Auction from './Auction';
 import Teams from './Teams';
 import Dailyscore from './Dailyscore';
 import Login from './Login';
+import LoginToSetup from './LoginToSetup';
+import SetupTeams from './SetupTeams';
 import { Route, Routes } from 'react-router-dom'
 
 export default function App() {
@@ -46,6 +48,12 @@ export default function App() {
   const navigateToDailyScore = () => {
     window.location.href = `${process.env.PUBLIC_URL}/#/daily`;
   };
+
+  const navigateToSetupTeams = () => {
+    window.location.href = `${process.env.PUBLIC_URL}/#/loginsetup`;
+
+  }
+
   return (
     <div>
       <div className="container">
@@ -53,6 +61,7 @@ export default function App() {
           <button className="mainButton" onClick={navigateToAuction}>Auction Page</button>
           <button className="mainButton" onClick={navigateToOwners}>Owner Teams</button>
           <button className="mainButton" onClick={navigateToDailyScore}>Daily Score</button>
+          <button className="mainButton" onClick={navigateToSetupTeams}>Setup Teams</button>
         </div>
         <Routes>
           <Route path="/" element={<h1 style={{color:"black",fontSize:"300%",justifyItems:"center"}}>Welcome To EFL 2023</h1>} />
@@ -61,6 +70,8 @@ export default function App() {
           <Route path="/owners" element={<Teams />} />
           <Route path="/daily" element={<Dailyscore />} />
           <Route path="/auction" element={<Auction />} />
+          <Route path="/loginsetup" element={<LoginToSetup />} />
+          <Route path="/SetupTeams" element={<SetupTeams />} />
         </Routes>
     </div>
   );
