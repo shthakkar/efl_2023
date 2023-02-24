@@ -123,7 +123,9 @@ Auction() {
   
 
   const handleSoldClick = (inStatus,inBidder,inAmount) => {
-    const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country };
+    //Adding code to points for mock
+    let random_points = Math.floor(Math.random() * (100 - 50) + 50)
+    const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country,points: random_points };
     console.log(inStatus,inBidder,inAmount)
     if (inStatus === 'sold')
     {
@@ -312,10 +314,11 @@ const handleSetup = () =>
       
         </div>
       ))}
-      <div style={{display: 'flex', flexDirection: 'column'}}>
-        
+      <div style={{display: 'flex', flexDirection: 'column',position:"relative",bottom:"20px"}}>
+      
+      <input type="text" border="1px solid black" borderRadius="10px" value={requestedPlayer} onChange={handleRequestedPlayerChange}/> 
       <button className="action-button" onClick={handleClick}>Next Player</button>
-      <input type="text" value={requestedPlayer} onChange={handleRequestedPlayerChange}/>
+      
       </div>
       <button className="action-button" onClick={()=>handleSoldClick('sold', bidder, amount)} disabled={buttonSold}>Mark Sold</button>
       <button className="action-button" onClick={()=>handleSoldClick('unsold-processed','',0)} disabled={buttonunSold}>Mark Unsold</button>
