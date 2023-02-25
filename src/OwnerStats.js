@@ -7,9 +7,9 @@ export default function OwnerStats(props) {
     rows: {
       style: {
         maxHeight: '10px',
-        fontSize: '12px',
+        fontSize: '9px',
         border: '1px solid black',
-        maxWidth :'600px'
+        maxWidth :'700px'
       },
     },
     headCells: {
@@ -80,10 +80,18 @@ export default function OwnerStats(props) {
       cell: row => <div style={{ backgroundColor: row.totalCount >= settings.squadSize ? 'lightgreen' : 'white',textAlign:'center', padding: '4px',width: '50%',
       height: '50%' }}>{row.totalCount}</div>,
     },
+    {
+      name: 'Purse',
+      selector: row => row.currentPurse,
+      width: '120px',
+      cell: row => <div style={{ backgroundColor: 'white',textAlign:'center', padding: '2px',width: '100%',
+      height: '50%' }}>{row.currentPurse}</div>,
+
+    }
   ];
 
   return (
-    <div style={{width:'100%'}}>
+    <div>
       <DataTable
         title="Owners Stats"
         columns={columns}

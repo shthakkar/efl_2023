@@ -225,7 +225,7 @@ const handleBlur = () => {
 };
 
 const handleChange = event => {
-  setAmount(event.target.value);
+  setAmount(parseInt(event.target.value));
 };
 
 const [requestedPlayer, setRequestedPlayerChange] = useState("");
