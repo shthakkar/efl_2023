@@ -1,20 +1,17 @@
 import React, { useState, useEffect} from "react";
 import './style.css';
 import DataTable from 'react-data-table-component';
-import _ from 'lodash'
 import TeamRestrictions from "./TeamRestrictions";
 
-
 export default function Teams() {
-    const [Playerslist, setPlayerslist] = useState([]);
-    
-    const customStyles = {
+  const [Playerslist, setPlayerslist] = useState([]);
+
+  const customStyles = {
     rows: {
       style: {
         maxHeight: '10px',
-        fontSize: '12px',
-        border: '1px solid black',
-        backgroundColor: 'green',
+        fontSize: '14px',
+        fontWeight: 'Bold'
       },
     },
     headCells: {
@@ -22,80 +19,124 @@ export default function Teams() {
         border: '2px solid black',
         fontSize: '16px',
         fontWeight: 'Bold',
-        color: 'blue'
+        color:'red'
       },
     },
     cells: {
       style: {
-        border: '1px solid black',
         color: 'black',
         fontSize: '14px'
       },
     },
   };
-    
-    useEffect(() => {
-        async function getallplayers(){
-            try {
-                const response = await fetch('https://testefl2023.azurewebsites.net/getallplayers');
-                if(response.ok){
-                    const data = await response.json();
-                    //console.log(data)
-                    setPlayerslist(data);
-                } else {
-                    console.log('Error: ' + response.status + response.body);
-                }
-            } catch (error) {
-            console.error(error);
-            }
-    
-    }
-    getallplayers();
-    },[])
 
-    const groupedsoldPlayers = Playerslist.filter(item =>item.status==='sold' && item.ownerTeam)
+  useEffect(() => {
+    async function getallsoldteamplayers(){
+      try {
+        const response = await fetch('https://testefl2023.azurewebsites.net/getallsoldplayers');
+        if(response.ok){
+          const playerlist = await response.json();
+          //console.log(data)
+          setPlayerslist(playerlist);
+        } else {
+          console.log('Error: ' + response.status + response.body);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getallsoldteamplayers();
+  }, [])
+
+  const teamsData = Playerslist.reduce((acc, player) => {
+    if (!acc[player.ownerTeam]) {
+      acc[player.ownerTeam] = [];
+    }
+    acc[player.ownerTeam].push({ name: player.name, iplTeam: player.iplTeam, role: player.role, country: player.country, boughtfor: player.boughtFor, tier: player.tier });
+    return acc;
+  }, {});
+
+  const data = [];
+  
+  for (const [teamName, players] of Object.entries(teamsData)) {
+    const team = {
+      teamName: teamName,
+      players: players,
+      sqaudsize:players.length
+    };
+    data.push(team);
+  }
+
+  console.log("abc",data)
+
+  const ExpandedRow = ({data})=>{
+    const [selectedTeam, setSelectedTeam] = useState(data);
     
-    const groupedData = _.groupBy(groupedsoldPlayers, 'ownerTeam');
+    if (selectedTeam) {
+      //const team = teams.find((t) => t.teamName === selectedTeam);
+      const playerColumns = [
+        { selector: row => row['name'], name: 'Name' , sortable: true},
+        { selector: row => row['iplTeam'], name: 'IPLTeam' , sortable: true},
+        { selector: row => row['country'], name: 'Country' , sortable: true},
+        { selector: row => row['role'], name: 'Role' , sortable: true},
+        { selector: row => row['boughtfor'], name: 'BoughtFor' , sortable: true},
+        {
+            id: 'tier',
+            selector: (row) => row['tier'],
+            name: 'Tier',
+            sortable: true,
+          },
+         
+      ];
+      return (
+        <div>
+          <DataTable
+            title={`Players for ${selectedTeam.teamName}`}
+            data={selectedTeam.players}
+            columns={playerColumns}
+            defaultSortFieldId = "tier"
+            defaultSortAsc={false}
+            customStyles={customStyles}
+          />
+          <TeamRestrictions prop={selectedTeam.players}/>
+        </div>
+      );
+  }
+}
+  
+  
+  const TeamsTable = ({ teams }) => {
+    const [selectedTeam, setSelectedTeam] = useState()
 
     const columns = [
-    { selector: row => row['name'], name: 'Name' , sortable: true},
-    { selector: row => row['iplTeam'], name: 'IPL Team' , sortable: true},
-    { selector: row => row['role'], name: 'Role' , sortable: true},
-    { selector: row => row['country'], name: 'Country' , sortable: true},
-    { selector: row => row['tier'], name: 'Tier', sortable: true },
-    {
-        id: 'boughtFor',
-        selector: (row) => row['boughtFor'],
-        name: 'BoughtFor',
-        sortable: true,
-      },
-    ];
-
-  if(groupedsoldPlayers.length){
-  return (
-    <div>
-      {Object.keys(groupedData).map(groupKey => (
-        <div style={{fontSize: '20px',fontWeight: 'Bold',color: 'black',textAlign:'center'}} key={groupKey}>
-          <h2>{groupKey}</h2>
-          <DataTable
-            data={groupedData[groupKey]}
-            columns={columns}
-            customStyles = {customStyles}
-            sortable
-            defaultSortFieldId="boughtFor"
-          />
-          <TeamRestrictions data={groupedData[groupKey]}/>
-        </div>
-      ))}
-    </div>
-  );
-}
-else{
-
-  return(<h2>No data to display</h2>)
-}
-}
-
-
+        {
+          id: 'teamName',
+          selector: (row) => row['teamName'],
+          name: 'Team',
+          sortable: true,
+        },
+        { selector: row => row['sqaudsize'], name: 'SqaudSize' , sortable: true},
+      ];
   
-    
+  
+    return (
+    <div style={{fontSize: '20px',fontWeight: 'Bold',color: 'black',textAlign:'center'}}>
+          <h2>Owners Teams</h2>
+        <DataTable
+            data={teams}
+            columns={columns}
+            onRowClicked={(row) => console.log(row)}
+            defaultSortFieldId="teamName"
+            highlightOnHover ={true}
+            expandableRows
+            expandableRowsComponent={ExpandedRow}
+            expandableRowExpanded={(row) => row.teamName === selectedTeam}
+            onRowExpandToggled={(state, row) =>setSelectedTeam(state ? row.teamName : null)}
+            customStyles={customStyles}  
+        />
+    </div>
+    )
+  };
+  
+  return <TeamsTable teams={data} />;
+}
