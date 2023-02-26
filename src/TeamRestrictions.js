@@ -3,20 +3,18 @@ import ProgressBar from './ProgressBar'
 import PlayerRestrictions from './PlayerRestrictions'
 import settings from './settings.json'
 
-export default function TeamRestrictions(data) {
+export default function TeamRestrictions(prop) {
    
-  const arr = data.data
-  
-  
-  
-    
+  const players = prop
+ 
     return (
         <div>
     
-    <ProgressBar label="Squad:" progress={arr.length} max={settings.squadSize} />
-    <PlayerRestrictions data={data.data}/>
+    <ProgressBar label="Squad:" progress={players.prop.length} max={settings.squadSize} />
+    <PlayerRestrictions data={players.prop}/>
     
     </div>
     
   )
 }
+
