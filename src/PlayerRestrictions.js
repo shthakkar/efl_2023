@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import CircularNumber from './CircularNumber';
 
 export default function PlayerRestrictions(data) {
+   
     const [batsmanCount, setBatsmanCount] = useState(0);
     const [bowlerCount, setBowlerCount] = useState(0);
     const [keeperCount, setKeeperCount] = useState(0);
@@ -45,7 +46,7 @@ export default function PlayerRestrictions(data) {
     });
 },[]);
     return (
-    <div style={{display:"flex", marginRight: "500px"}}>
+    <div style={{display:"flex", marginRight: "500px", fontSize:"8px"}}>
         <CircularNumber text="Batsmen:" progress = {batsmanCount} max = {4}/>
         <CircularNumber text="Bowler:" progress = {bowlerCount} max = {4}/>
         <CircularNumber text="WK:" progress = {keeperCount} max = {1}/>
