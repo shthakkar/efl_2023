@@ -5,6 +5,8 @@ import DataTable, { createTheme } from 'react-data-table-component';
 
 export default function AllPlayers() {
   const [Allplayers,setAllPlayerslist] = useState([]);
+  const [filteredPlayers, setFilteredPlayers] = useState([]);
+
   useEffect(() => {
     async function getallplayerslist(){
         try {
@@ -13,6 +15,7 @@ export default function AllPlayers() {
                 const data = await response.json();
                 //console.log(data)
                 setAllPlayerslist(data);
+                setFilteredPlayers(data.filter(item => item.status !== 'sold'));
             } else {
                 console.log('Error: ' + response.status + response.body);
             }
@@ -23,85 +26,34 @@ export default function AllPlayers() {
       }
       getallplayerslist();
   },[])
-  const players = Allplayers.filter(item =>item.status!=='sold')
-  const rows = players;
-  const customStyles = {
-    rows: {
-      positive: {
-        backgroundColor: 'green',
-      },
-      negative: {
-        backgroundColor: 'red',
-      },
-    },
-    header: {
-      style: {
-        backgroundColor: '#333',
-        color: '#fff',
-        fontWeight: 'bold',
-        textTransform: 'uppercase',
-      },
-    },
-    cells: {
-      style: {
-        border: '1px solid #ccc',
-        padding: '8px',
-      },
-    },
-    evenRows: {
-      style: {
-        backgroundColor: '#f2f2f2',
-      },
-    },
-    hoveredRow: {
-      style: {
-        backgroundColor: '#f5f5f5',
-      },
-    },
-    selectedRow: {
-      style: {
-        backgroundColor: '#007bff',
-        color: '#fff',
-      },
-    },
-  };
-
-  const getRandomColor = () => {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  };
-
+ 
   const conditionalRowStyles = [
     {
       when: (row) => row.tier === 1,
       style: {
         border: '1px solid black',
-        backgroundColor: getRandomColor(),
+        backgroundColor: 'lightgreen',
       },
     },
     {
       when: (row) => row.tier === 2,
       style: {
         border: '1px solid black',
-        backgroundColor: getRandomColor(),
+        backgroundColor: 'lightblue',
       },
     },
     {
       when: (row) => row.tier === 3,
       style: {
         border: '1px solid black',
-        backgroundColor: getRandomColor(),
+        backgroundColor: 'orange',
       },
     },
     {
       when: (row) => row.tier === 4,
       style: {
         border: '1px solid black',
-        backgroundColor: getRandomColor(),
+        backgroundColor: 'lightpink',
       },
     },
   ];
@@ -128,14 +80,26 @@ export default function AllPlayers() {
       sortable: true,
     },
   ];
+
+  const handleFilter = (e) => {
+    const value = e.target.value;
+    const filtered = Allplayers.filter((player) =>
+      player.name.toLowerCase().includes(value.toLowerCase())
+    );
+    setFilteredPlayers(filtered);
+  };
+
+
   return (
     <div>
-      {console.log('testing')}
       <DataTable
         columns={columns}
-        data={rows}
+        data={filteredPlayers}
         conditionalRowStyles={conditionalRowStyles}
         defaultSortFieldId="rank"
+        onFilter={handleFilter}
+        subHeader
+        subHeaderComponent={<input type="text" placeholder="Filter by name" onChange={handleFilter} />}
       />
     </div>
   );
