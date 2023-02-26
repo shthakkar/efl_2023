@@ -1,18 +1,27 @@
 import React, { useState} from "react";
 import './style.css';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useLocation } from 'react-router-dom'
 
 export default function Login() {
     const [pass, setPass] = useState('');
     const navigate = useNavigate()
     const timestamp = new Date();
+    const location = useLocation();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (pass ==='123456'){
-            localStorage.setItem('pin',pass)
-            localStorage.setItem('timestamp',timestamp)
-            navigate('/auction')
+        if (pass ==='123456') {
+            if(location.state.previousurl==='/auction'){
+                localStorage.setItem('pin',pass)
+                localStorage.setItem('timestamp',timestamp)
+                navigate(location.state.previousurl)
+            }
+            else if (location.state.previousurl==='/SetupTeams'){
+                navigate(location.state.previousurl)
+            }
+            else if (location.state.previousurl==='/ManageTeams'){
+                navigate(location.state.previousurl)
+            }   
         }
     }
 
