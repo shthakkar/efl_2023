@@ -317,7 +317,7 @@ const handleSetup = () =>
       ))}
       <div style={{display: 'flex', flexDirection: 'column',position:"relative",bottom:"20px"}}>
       
-      <input type="text" border="1px solid black" borderRadius="10px" value={requestedPlayer} onChange={handleRequestedPlayerChange}/> 
+      <input type="text" placeholder="Player Name" value={requestedPlayer} onChange={handleRequestedPlayerChange}/> 
       <button className="action-button" onClick={handleClick}>Next Player</button>
       
       </div>
