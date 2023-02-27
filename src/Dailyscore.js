@@ -1,11 +1,40 @@
 import React, { useState, useEffect} from "react";
 import './style.css';
 import DataTable from 'react-data-table-component';
+import { createTheme } from "react-data-table-component";
 
 export default function Dailyscore() {
   const [Playersownerslist, setPlayerownersslist] = useState([]);
   const [Teamsstats, setTeamsstats] = useState([])
 
+  createTheme('dark', {
+    background: {
+      default: '#F4A460',
+    },
+  });
+
+  createTheme('solarized', {
+    text: {
+      primary: '#268bd2',
+      secondary: '#2aa198',
+    },
+    background: {
+      default: '#FFDAB9',
+    },
+    context: {
+      background: '#cb4b16',
+      text: '#FFFFFF',
+    },
+    divider: {
+      default: '#073642',
+    },
+    action: {
+      button: 'rgba(0,0,0,.54)',
+      hover: 'rgba(0,0,0,.08)',
+      disabled: 'rgba(0,0,0,.12)',
+    },
+  }, 'dark');
+  
   const customStyles = {
     rows: {
       style: {
@@ -127,6 +156,7 @@ export default function Dailyscore() {
             defaultSortFieldId = "points"
             defaultSortAsc={false}
             customStyles={customStyles}
+            theme="solarized"
 
           />
           <button className="action-button" onClick={() => setSelectedTeam(null)}>Back</button>
@@ -148,6 +178,7 @@ export default function Dailyscore() {
             expandableRowExpanded={(row) => row.teamName === selectedTeam}
             onRowExpandToggled={(state, row) =>setSelectedTeam(state ? row.teamName : null)}
             customStyles={customStyles}
+            theme="dark"
             
         />
     </div>
