@@ -2,9 +2,38 @@ import React, { useState, useEffect} from "react";
 import './style.css';
 import DataTable from 'react-data-table-component';
 import TeamRestrictions from "./TeamRestrictions";
+import { createTheme } from "react-data-table-component";
 
 export default function Teams() {
   const [Playerslist, setPlayerslist] = useState([]);
+  
+  createTheme('dark', {
+    background: {
+      default: '#4682B4',
+    },
+  });
+
+  createTheme('solarized', {
+    text: {
+      primary: '#268bd2',
+      secondary: '#2aa198',
+    },
+    background: {
+      default: '#87CEEB',
+    },
+    context: {
+      background: '#cb4b16',
+      text: '#FFFFFF',
+    },
+    divider: {
+      default: '#073642',
+    },
+    action: {
+      button: 'rgba(0,0,0,.54)',
+      hover: 'rgba(0,0,0,.08)',
+      disabled: 'rgba(0,0,0,.12)',
+    },
+  }, 'dark');
 
   const customStyles = {
     rows: {
@@ -97,6 +126,7 @@ export default function Teams() {
             defaultSortFieldId = "tier"
             defaultSortAsc={false}
             customStyles={customStyles}
+            theme='solarized'
           />
           <TeamRestrictions prop={selectedTeam.players}/>
         </div>
@@ -132,7 +162,8 @@ export default function Teams() {
             expandableRowsComponent={ExpandedRow}
             expandableRowExpanded={(row) => row.teamName === selectedTeam}
             onRowExpandToggled={(state, row) =>setSelectedTeam(state ? row.teamName : null)}
-            customStyles={customStyles}  
+            customStyles={customStyles}
+            theme='dark'
         />
     </div>
     )
