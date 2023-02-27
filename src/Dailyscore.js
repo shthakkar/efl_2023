@@ -98,8 +98,10 @@ export default function Dailyscore() {
   const teamData = Playersownerslist.reduce((acc, player) => {
     if (!acc[player.ownerTeam]) {
       acc[player.ownerTeam] = [];
+      acc[player.ownerTeam].teamplayerpoints = 0;
     }
     acc[player.ownerTeam].push({ name: player.name, points: player.points });
+    acc[player.ownerTeam].teamplayerpoints += player.points
     return acc;
   }, {});
 
@@ -159,6 +161,7 @@ export default function Dailyscore() {
             theme="solarized"
 
           />
+          <h1>Total {team.players.teamplayerpoints}</h1>
           <button className="action-button" onClick={() => setSelectedTeam(null)}>Back</button>
         </div>
       );
