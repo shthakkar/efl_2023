@@ -123,9 +123,8 @@ Auction() {
   
 
   const handleSoldClick = (inStatus,inBidder,inAmount) => {
-    //Adding code to points for mock
-    let random_points = Math.floor(Math.random() * (100 - 50) + 50)
-    const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country,points: random_points };
+   
+    const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country };
     console.log(inStatus,inBidder,inAmount)
     if (inStatus === 'sold')
     {
@@ -294,7 +293,7 @@ const handleSetup = () =>
          </div>
         </div>
       </div>
-      <div style={{display: "flex",position:"relative",bottom:"-30px",alignItems:"center",color: timer <= '5' ? 'red':'black' }}>
+      <div style={{display: "flex",position:"relative",bottom:"-30px",left:"95px",color: timer <= '5' ? 'red':'black' }}>
         {isflag &&(
           <div className="time-text show">Time Remaining: {timer}</div>) }
       </div>
