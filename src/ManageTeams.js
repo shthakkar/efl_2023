@@ -1,12 +1,34 @@
 import React, { useState, useEffect, useMemo} from "react";
 import './style.css';
 import DataTable from 'react-data-table-component';
-
+import { createTheme } from "react-data-table-component";
 
 
 export default function ManageTeams() {
   const [SoldPlayerslist, setSoldPlayerslist] = useState([]);
   const [GetPlayer, setPlayer] = useState();
+  
+  createTheme('solarized', {
+    text: {
+      primary: '#268bd2',
+      secondary: '#2aa198',
+    },
+    background: {
+      default: '#BDB76B',
+    },
+    context: {
+      background: '#cb4b16',
+      text: '#FFFFFF',
+    },
+    divider: {
+      default: '#073642',
+    },
+    action: {
+      button: 'rgba(0,0,0,.54)',
+      hover: 'rgba(0,0,0,.08)',
+      disabled: 'rgba(0,0,0,.12)',
+    },
+  }, 'dark');
   
   
   const customStyles = {
@@ -70,7 +92,7 @@ export default function ManageTeams() {
   const contextActions = useMemo(() => {
      const Deleteplayer =() =>{
         const player = GetPlayer
-        const payload = { ownerTeam: player[0].ownerTeam ,status: "unsold",boughtFor:player[0].boughtFor, points: player[0].points,role:player[0].role,country:player[0].country};
+        const payload = { ownerTeam: player[0].ownerTeam ,status: "unsold",boughtFor:player[0].boughtFor,role:player[0].role,country:player[0].country};
         fetch('https://testefl2023.azurewebsites.net/deleteplayer/'+player[0]._id.$oid, {
             method: 'PUT',
             headers: {
@@ -112,7 +134,8 @@ export default function ManageTeams() {
         selectableRowsHighlight
         contextActions={contextActions}
         onSelectedRowsChange={handleChange}
-        
+        theme='solarized'
+
       />
     </div>
   );
