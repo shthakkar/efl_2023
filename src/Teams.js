@@ -118,7 +118,7 @@ export default function Teams() {
          
       ];
       return (
-        <div>
+        <div style={{background:"#87CEEB"}}>
           <DataTable
             title={`Players for ${selectedTeam.teamName}`}
             data={selectedTeam.players}
