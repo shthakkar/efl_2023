@@ -26,7 +26,7 @@ export default function App() {
   useEffect(() => {
     // Check if the user's IP address matches the allowed address
     console.log(ipAddress);
-    if (ipAddress === '50.47.215.77') {
+    if (ipAddress === '50.47.215.77' || ipAddress === '76.144.211.140') {
       
 
       setShowButtons(true);
