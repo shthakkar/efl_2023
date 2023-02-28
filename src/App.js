@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect}  from 'react';
 import './style.css';
 import AllPlayers from './AllPlayers';
 import Auction from './Auction';
@@ -13,6 +13,27 @@ export default function App() {
   const timestamp = new Date();
   let diff ;
   const navigate = useNavigate()
+  const [ipAddress, setIpAddress] = useState('');
+  const [showButtons, setShowButtons] = useState(false);
+
+  useEffect(() => {
+    fetch('https://api.ipify.org?format=json')
+      .then(response => response.json())
+      .then(data => setIpAddress(data.ip))
+      .catch(error => console.error(error));
+  }, []);
+
+  useEffect(() => {
+    // Check if the user's IP address matches the allowed address
+    console.log(ipAddress);
+    if (ipAddress === '50.47.215.77') {
+      
+
+      setShowButtons(true);
+    }else{
+      setShowButtons(false);
+    }
+  }, [ipAddress]);
 
   const navigateToAuction = () => {
     //localStorage.removeItem('timestamp')
@@ -64,16 +85,16 @@ export default function App() {
   const navigateToManageTeams =() =>{
     navigate('/login',{state:{previousurl:'/ManageTeams'}})
   }
-
+console.log(showButtons)
   return (
     <div>
       <div className="container">
           <button className="mainButton" onClick={navigateHome}>Home</button>
-          <button className="mainButton" onClick={navigateToAuction}>Auction Page</button>
+          {showButtons && <button className="mainButton" onClick={navigateToAuction}>Auction Page</button>}
           <button className="mainButton" onClick={navigateToOwners}>Owner Teams</button>
           <button className="mainButton" onClick={navigateToDailyScore}>Daily Score</button>
-          <button className="mainButton" onClick={navigateToManageTeams}>Manage Teams</button>
-          <button className="mainButton" onClick={navigateToSetupTeams}>Setup Teams</button>
+          {showButtons && <button className="mainButton" onClick={navigateToManageTeams}>Manage Teams</button>}
+          {showButtons && <button className="mainButton" onClick={navigateToSetupTeams}>Setup Teams</button>}
         </div>
         <Routes>
           <Route path="/" element={<h1 style={{color:"black",fontSize:"300%",left:"50%"}}>Welcome To EFL 2023</h1>} />
