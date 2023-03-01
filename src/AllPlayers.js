@@ -6,6 +6,7 @@ import DataTable, { createTheme } from 'react-data-table-component';
 export default function AllPlayers() {
   const [Allplayers,setAllPlayerslist] = useState([]);
   const [filteredPlayers, setFilteredPlayers] = useState([]);
+  const [soldPlayers, setSoldPlayers] = useState([])
 
   useEffect(() => {
     async function getallplayerslist(){
@@ -16,6 +17,7 @@ export default function AllPlayers() {
                 //console.log(data)
                 setAllPlayerslist(data);
                 setFilteredPlayers(data.filter(item => item.status !== 'sold'));
+                setSoldPlayers(data.filter(item => item.status !== 'sold'))
             } else {
                 console.log('Error: ' + response.status + response.body);
             }
@@ -59,10 +61,10 @@ export default function AllPlayers() {
   ];
 
   const columns = [
-    { selector: (row) => row['name'], name: 'Name' , sortable: true},
-    { selector: (row) => row['iplTeam'], name: 'IPL Team' , sortable: true},
+    { selector: (row) => row['name'], name: 'Name' , sortable: true, filterable: true},
+    { selector: (row) => row['iplTeam'], name: 'IPL Team' , sortable: true, filterable: true},
     { selector: (row) => row['status'], name: 'Status' , sortable: true},
-    { selector: (row) => row['role'], name: 'Role' , sortable: true},
+    { selector: (row) => row['role'], name: 'Role' , sortable: true, filterable: true},
     { selector: (row) => row['country'], name: 'Country' , sortable: true},
     { selector: (row) => row['tier'], name: 'Tier', sortable: true },
     { selector: (row) => row['points'], name: 'Points' , sortable: true},
@@ -83,8 +85,10 @@ export default function AllPlayers() {
 
   const handleFilter = (e) => {
     const value = e.target.value;
-    const filtered = Allplayers.filter((player) =>
-      player.name.toLowerCase().includes(value.toLowerCase())
+    const filtered = soldPlayers.filter((player) =>
+      player.name.toLowerCase().includes(value.toLowerCase())||
+      player.iplTeam.toLowerCase().includes(value.toLowerCase())||
+      player.role.toLowerCase().includes(value.toLowerCase())
     );
     setFilteredPlayers(filtered);
   };
@@ -99,7 +103,7 @@ export default function AllPlayers() {
         defaultSortFieldId="rank"
         onFilter={handleFilter}
         subHeader
-        subHeaderComponent={<input type="text" placeholder="Filter by name" onChange={handleFilter} />}
+        subHeaderComponent={<input type="text" placeholder="Filter String" onChange={handleFilter} />}
       />
     </div>
   );
