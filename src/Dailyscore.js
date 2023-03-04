@@ -128,6 +128,11 @@ export default function Dailyscore() {
     const [selectedTeam, setSelectedTeam] = useState(null);
 
     const columns = [
+        {
+          name: '#',
+          cell: (row, index) => index + 1,
+          width: '50px'
+        },
         { selector: (row) => row["teamName"], name: "Team", sortable: true },
         {
             id: 'totalpoint',
