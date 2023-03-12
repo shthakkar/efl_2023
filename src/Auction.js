@@ -5,7 +5,7 @@ import './style.css';
 import settings from './settings.json'
 
 export default function 
-Auction() {
+Auction({socket}) {
   const [timer, setTimer] = useState(20)
   const timerId = useRef()
 
@@ -87,10 +87,35 @@ Auction() {
     }
   }
 
+  useEffect(() => {
+
+    const handleDisconnect = () => {
+      console.log("Disconnected from socket server.");
+    };
+
+    const handleNextPlayer = (data) => {
+      //setNextPlayer([data]);
+      actionsAfterGetPlayer(data);
+    };
+
+
+    socket.on("disconnect", handleDisconnect);
+    socket.on("getplayer", handleNextPlayer);
+    socket.on("getspecificplayer", handleNextPlayer);
+
+
+    return () => {
+      socket.off("disconnect", handleDisconnect);
+      socket.off("getplayer", handleNextPlayer);
+    };
+  }, [socket, getRandom]);
+
+
+
   const handleClick = async () => {
     if(requestedPlayer!=="")
     {
-      try{
+      /*try{
       const response = await fetch('https://testefl2023.azurewebsites.net/getspecificplayer/'+requestedPlayer);
       if(response.ok)
       {
@@ -104,9 +129,12 @@ Auction() {
       }catch (error) {
         console.error(error);
       }
-      return
+      return*/
+      socket.emit('getspecificplayer', { playername: requestedPlayer });
       
     }
+    //Commenting below code to add socket code
+    /*
     try {
       const response = await fetch('https://testefl2023.azurewebsites.net/getplayer');
       if(response.ok){
@@ -117,8 +145,14 @@ Auction() {
      }
     } catch (error) {
       console.error(error);
+    }*/
+    else{
+      socket.emit("getplayer");
     }
+    
   };
+
+  
   const buttonTexts = settings.setup.teamNames;
   
 
