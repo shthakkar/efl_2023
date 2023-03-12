@@ -5,11 +5,12 @@ import settings from './settings.json'
 import OwnerStats from './OwnerStats'
 
 export default function DraftRoom({socket}) {
-  const [message, setMessage] = useState(false);
-  //const [timer, setTimer] = useState(20)
+  
+  const [playerstatus, setPlayerStatus] = useState('')
   const [remainingTime, setRemainingTime] = useState(20);
   const [intervalId, setIntervalId] = useState(null);
   const [isflag, setFlag] = useState(false) 
+  const [isdisplay, setDisplay] = useState(false)
   const sample = {
     "_id":{"$oid":"63b90a44f4902c26b5359388"},
     "name": "Player Name",
@@ -36,9 +37,10 @@ export default function DraftRoom({socket}) {
     socket.emit('restart_timer');
    };
 
-  const handleGetTime = () => {
-      socket.emit('get_time');
-    };
+   const handleGetTime = () => {
+    socket.emit('get_time');
+  };
+
   useEffect(() => {
     // Check if the socket is already connected before adding event listeners
     if (socket.connected) {
@@ -57,14 +59,23 @@ export default function DraftRoom({socket}) {
       actionstobedoneAfterGetPlayer(data);
     };
 
-
     handleGetTime()
   
     handleRestartTimer()
 
+    const handlemessage =(data) => {
+      setDisplay(true)
+      setPlayerStatus(data)
+      setFlag(false)
+      //console.log(data)
+    }
+
+    socket.on('message', handlemessage)
+
     socket.on("disconnect", handleDisconnect);
     socket.on("getplayer", handleNextPlayer);
     socket.on("getspecificplayer", handleNextPlayer);
+    
 
     socket.on('timer_started', () => {
       setIntervalId(setInterval(handleGetTime, 1000));
@@ -83,8 +94,12 @@ export default function DraftRoom({socket}) {
     return () => {
       socket.off("disconnect", handleDisconnect);
       socket.off("getplayer", handleNextPlayer);
+      setDisplay(false)
+      //clearInterval(intervalId);
+
     };
   }, [socket, nextPlayer]);
+
 
   const handlebid = () => {
    
@@ -142,7 +157,7 @@ export default function DraftRoom({socket}) {
     setFlag(true)
   }
 
-
+  
   return (
     <div className="App">
       <div className="top-row">
@@ -168,6 +183,9 @@ export default function DraftRoom({socket}) {
          <p className='shiny-text'>Max Bid: {ownerToMaxBid[bidder]?.maxBid} lacs</p>
          </div>
         </div>
+      </div>
+      <div>
+        {isdisplay && <div className="sold-text show" style={{color: playerstatus === 'SOLD' ? 'red':'grey' }}>{playerstatus}</div>}
       </div>
       <div style={{display: "flex",position:"relative",bottom:"-30px",left:"95px",color: remainingTime.toFixed(0) <= 5 ? 'red':'black' }}>
         {isflag &&(
