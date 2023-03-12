@@ -9,6 +9,7 @@ Auction({socket}) {
   const [timer, setTimer] = useState(20)
   const timerId = useRef()
 
+  /*
   useEffect(() => {
     timerId.current = setInterval(() => {
             setTimer(timer => timer - 1)
@@ -20,7 +21,29 @@ Auction({socket}) {
         if (timer <= 0) {
             clearInterval(timerId.current)
         }
-    }, [timer])
+    }, [timer])*/
+
+    
+  const [remainingTime, setRemainingTime] = useState(20);
+  const [intervalId, setIntervalId] = useState(null);
+
+
+  const handleStartTimer = () => {
+    socket.emit('start_timer');
+  };
+  const handleRestartTimer = () => {
+    socket.emit('restart_timer');
+  };
+
+  const handleStopTimer = () => {
+    socket.emit('stop_timer');
+    clearInterval(intervalId);
+  };
+
+  const handleGetTime = () => {
+    socket.emit('get_time');
+  };
+
 
   const [selectedButton, setSelectedButton] = useState(null);
   const [bidder, setBidder] = useState('');
@@ -96,12 +119,22 @@ Auction({socket}) {
     const handleNextPlayer = (data) => {
       //setNextPlayer([data]);
       actionsAfterGetPlayer(data);
+      handleStartTimer();
+      handleGetTime()
     };
 
 
     socket.on("disconnect", handleDisconnect);
     socket.on("getplayer", handleNextPlayer);
     socket.on("getspecificplayer", handleNextPlayer);
+    socket.on('timer_started', () => {
+      setIntervalId(setInterval(handleGetTime, 1000));
+    });
+  
+    socket.on('timer_update', (remainingTime) => {
+      setRemainingTime(Math.max(remainingTime, 0));
+    });
+  
 
 
     return () => {
@@ -185,6 +218,10 @@ Auction({socket}) {
       console.error(error);
     });
     setFlag(false)
+    handleStopTimer()
+    socket.on('timer_stopped', () => {
+      clearInterval(intervalId);
+    });
   }
   const [firstClick,setFirstClick] = useState(true)
 
@@ -327,9 +364,9 @@ const handleSetup = () =>
          </div>
         </div>
       </div>
-      <div style={{display: "flex",position:"relative",bottom:"-30px",left:"95px",color: timer <= '5' ? 'red':'black' }}>
+      <div style={{display: "flex",position:"relative",bottom:"-30px",left:"95px",color: remainingTime.toFixed(0) <= 5 ? 'red':'black' }}>
         {isflag &&(
-          <div className="time-text show">Time Remaining: {timer}</div>) }
+          <div className="time-text show">Time Remaining: {remainingTime.toFixed(0)}</div>) }
       </div>
       <div>
         {isSold && <div className="sold-text show">SOLD</div>}
