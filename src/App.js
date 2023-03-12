@@ -8,6 +8,8 @@ import Login from './Login';
 import SetupTeams from './SetupTeams';
 import ManageTeams from './ManageTeams';
 import { Route, Routes, useNavigate } from 'react-router-dom'
+import { io } from "socket.io-client";
+import DraftRoom from './DraftRoom';
 
 export default function App() {
   const timestamp = new Date();
@@ -15,6 +17,7 @@ export default function App() {
   const navigate = useNavigate()
   const [ipAddress, setIpAddress] = useState('');
   const [showButtons, setShowButtons] = useState(false);
+  const [socketInstance, setSocketInstance] = useState("");
 
   useEffect(() => {
     fetch('https://api.ipify.org?format=json')
@@ -35,12 +38,25 @@ export default function App() {
     }
   }, [ipAddress]);
 
-  const navigateToAuction = () => {
-    //localStorage.removeItem('timestamp')
-    const stored = localStorage.getItem('timestamp');
+  useEffect(() => {
+    const socket = io("localhost:5001/", {
+        transports: ["websocket"],
+        cors: {
+          origin: "http://localhost:3000/efl_2023/#",
+        },
+      });
 
+      setSocketInstance(socket);
+
+},[])
+
+
+  const navigateToAuction = () => {
+    const stored = localStorage.getItem('timestamp');
+    
     if (stored) {
       const storedTime = new Date(stored);
+      
       if (isNaN(storedTime)) {
         // handle invalid stored timestamp
         //window.location.href = `${process.env.PUBLIC_URL}/#/login`;
@@ -60,20 +76,22 @@ export default function App() {
       navigate('/login',{state:{previousurl:'/auction'}})
       return;
     }
-
     // navigate to auction page if less than 24 hours
     //console.log("a",location.pathname)
-    window.location.href = `${process.env.PUBLIC_URL}/#/auction`;
+        navigate('/auction');
   };
 
   const navigateHome = () => {
-    window.location.href = `${process.env.PUBLIC_URL}/#/home`;
+    //window.location.href = `${process.env.PUBLIC_URL}/#/home`;
+    navigate('/home')
   };
   const navigateToOwners = () => {
-    window.location.href = `${process.env.PUBLIC_URL}/#/owners`;
+    //window.location.href = `${process.env.PUBLIC_URL}/#/owners`;
+    navigate('/owners')
   };
   const navigateToDailyScore = () => {
-    window.location.href = `${process.env.PUBLIC_URL}/#/daily`;
+    //window.location.href = `${process.env.PUBLIC_URL}/#/daily`;
+    navigate('/daily')
   };
 
   const navigateToSetupTeams = () => {
@@ -85,6 +103,12 @@ export default function App() {
   const navigateToManageTeams =() =>{
     navigate('/login',{state:{previousurl:'/ManageTeams'}})
   }
+
+  const navigateToDraftRoom =() =>{
+    navigate('/login',{state:{previousurl:'/Draft'}});
+    //navigate('/Socket');
+  }
+
 console.log(showButtons)
   return (
     <div>
@@ -95,16 +119,18 @@ console.log(showButtons)
           <button className="mainButton" onClick={navigateToDailyScore}>Daily Score</button>
           {showButtons && <button className="mainButton" onClick={navigateToManageTeams}>Manage Teams</button>}
           {showButtons && <button className="mainButton" onClick={navigateToSetupTeams}>Setup Teams</button>}
+          <button className="mainButton" onClick={navigateToDraftRoom}>Draft Room</button>
         </div>
         <Routes>
           <Route path="/" element={<h1 style={{color:"black",fontSize:"300%",left:"50%"}}>Welcome To EFL 2023</h1>} />
           <Route path="/home" element={<AllPlayers />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/login" element={<Login socket={socketInstance}/>} />
           <Route path="/owners" element={<Teams />} />
           <Route path="/daily" element={<Dailyscore />} />
-          <Route path="/auction" element={<Auction />} />
+          <Route path="/auction" element={<Auction socket={socketInstance}/>} />
           <Route path="/SetupTeams" element={<SetupTeams />} />
           <Route path="/ManageTeams" element={<ManageTeams />}/>
+          <Route path="/Draft" element={<DraftRoom socket={socketInstance}/>}/>
         </Routes>
     </div>
   );
