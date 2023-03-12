@@ -8,7 +8,6 @@ export default function
 Auction({socket}) {
   const [timer, setTimer] = useState(20)
   const timerId = useRef()
-
   /*
   useEffect(() => {
     timerId.current = setInterval(() => {
@@ -44,10 +43,10 @@ Auction({socket}) {
     socket.emit('get_time');
   };
 
-
   const [selectedButton, setSelectedButton] = useState(null);
   const [bidder, setBidder] = useState('');
   const [amount, setAmount] = useState(20);
+  const [message, setMessage] = useState('');
   
   const sample = {
     "_id":{"$oid":"63b90a44f4902c26b5359388"},
@@ -110,6 +109,7 @@ Auction({socket}) {
     }
   }
 
+  
   useEffect(() => {
 
     const handleDisconnect = () => {
@@ -123,6 +123,8 @@ Auction({socket}) {
       handleGetTime()
     };
 
+    
+
 
     socket.on("disconnect", handleDisconnect);
     socket.on("getplayer", handleNextPlayer);
@@ -135,7 +137,7 @@ Auction({socket}) {
       setRemainingTime(Math.max(remainingTime, 0));
     });
   
-
+    //handlemessage()
 
     return () => {
       socket.off("disconnect", handleDisconnect);
@@ -193,15 +195,21 @@ Auction({socket}) {
    
     const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country };
     console.log(inStatus,inBidder,inAmount)
+    const handlemessage = (message) =>{
+      socket.emit('message', message);
+    }
+  
     if (inStatus === 'sold')
     {
       setIsSold(true)
       setButtonSold(true)
+      handlemessage('SOLD')
     }
     else
     {
       setIsunSold(true)
       setButtonUnSold(true)
+      handlemessage('UNSOLD')
     }
     fetch('https://testefl2023.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
       method: 'PUT',
