@@ -36,6 +36,9 @@ export default function DraftRoom({socket}) {
     socket.emit('restart_timer');
    };
 
+  const handleGetTime = () => {
+      socket.emit('get_time');
+    };
   useEffect(() => {
     // Check if the socket is already connected before adding event listeners
     if (socket.connected) {
@@ -55,9 +58,7 @@ export default function DraftRoom({socket}) {
     };
 
 
-    const handleGetTime = () => {
-      socket.emit('get_time');
-    };
+    handleGetTime()
   
     handleRestartTimer()
 
@@ -92,7 +93,7 @@ export default function DraftRoom({socket}) {
     socket.on('timer_restarted', () => {
       clearInterval(intervalId);
       setRemainingTime(20);
-      setIntervalId(setInterval(socket.emit('get_time'), 1000));
+      setIntervalId(setInterval(handleGetTime, 1000));
     });
 
   };
