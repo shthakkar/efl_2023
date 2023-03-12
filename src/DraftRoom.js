@@ -7,6 +7,9 @@ import OwnerStats from './OwnerStats'
 export default function DraftRoom({socket}) {
   const [message, setMessage] = useState(false);
   //const [timer, setTimer] = useState(20)
+  const [remainingTime, setRemainingTime] = useState(20);
+  const [intervalId, setIntervalId] = useState(null);
+  const [isflag, setFlag] = useState(false) 
   const sample = {
     "_id":{"$oid":"63b90a44f4902c26b5359388"},
     "name": "Player Name",
@@ -29,6 +32,10 @@ export default function DraftRoom({socket}) {
   }
   const [nextPlayer, setNextPlayer] = useState([sample]);
 
+  const handleRestartTimer = () => {
+    socket.emit('restart_timer');
+   };
+
   useEffect(() => {
     // Check if the socket is already connected before adding event listeners
     if (socket.connected) {
@@ -48,9 +55,28 @@ export default function DraftRoom({socket}) {
     };
 
 
+    const handleGetTime = () => {
+      socket.emit('get_time');
+    };
+  
+    handleRestartTimer()
+
     socket.on("disconnect", handleDisconnect);
     socket.on("getplayer", handleNextPlayer);
     socket.on("getspecificplayer", handleNextPlayer);
+
+    socket.on('timer_started', () => {
+      setIntervalId(setInterval(handleGetTime, 1000));
+    });
+  
+    socket.on('timer_update', (remainingTime) => {
+      setRemainingTime(Math.max(remainingTime, 0));
+    });
+
+    socket.on('timer_stopped', () => {
+      clearInterval(intervalId);
+    });
+  
 
     // Return a cleanup function that removes the event listeners
     return () => {
@@ -59,9 +85,16 @@ export default function DraftRoom({socket}) {
     };
   }, [socket, nextPlayer]);
 
-  const handleSubmit = () => {
-    setNextPlayer([]);
-    socket.emit("getplayer");
+  const handlebid = () => {
+   
+    handleRestartTimer()
+
+    socket.on('timer_restarted', () => {
+      clearInterval(intervalId);
+      setRemainingTime(20);
+      setIntervalId(setInterval(socket.emit('get_time'), 1000));
+    });
+
   };
 
  const [ownerToMaxBid, setOwnerToMaxBid] = useState({})
@@ -105,6 +138,7 @@ export default function DraftRoom({socket}) {
   function actionstobedoneAfterGetPlayer(json) {
     setAmount(json.eflBase);
     getOwnersData(json.country);
+    setFlag(true)
   }
 
 
@@ -134,8 +168,12 @@ export default function DraftRoom({socket}) {
          </div>
         </div>
       </div>
+      <div style={{display: "flex",position:"relative",bottom:"-30px",left:"95px",color: remainingTime.toFixed(0) <= 5 ? 'red':'black' }}>
+        {isflag &&(
+          <div className="time-text show">Time Remaining: {remainingTime.toFixed(0)}</div>) }
+      </div>
         <div>
-        <button className="mainButton" onClick={handleSubmit}>Get Player</button>
+        <button className="mainButton" onClick={handlebid}>Bid</button>
         </div>
     </div>
     
