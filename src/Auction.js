@@ -79,7 +79,7 @@ Auction({socket}) {
  async function getOwnersData(prop)
   {
     try {
-      const response = await fetch('https://testefl2023.azurewebsites.net/getallownersdata');
+      const response = await fetch('http://localhost:5001/getallownersdata');
       if(response.ok){
         const json = await response.json();
         setOwnersData(json)

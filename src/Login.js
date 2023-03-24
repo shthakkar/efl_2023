@@ -49,13 +49,25 @@ export default function Login({socket}) {
         }),
       };
 
+    const joinActivities = (teamName)=>{
+        socket.emit('join', { team_name: teamName });
+        localStorage.setItem('teamname',teamName)
+        localStorage.setItem('playername', teamowner);
+        const activity_message = {
+            "eventType": "join",
+            "teamName": teamName,
+            "ownerName": teamowner,
+            "bidAmount": 0
+        }
+        socket.emit('sendActivityEvent',activity_message)
+    }
     
     const handleSubmit = (e) => {
         e.preventDefault();
         if (isadmin) {
             if(location.state.previousurl==='/auction'){
-                socket.emit('join', { team_name: selectedOption.value });
-                localStorage.setItem('teamname',selectedOption.value)
+                joinActivities(selectedOption.value)
+
                 localStorage.setItem('timestamp',timestamp)
                 navigate(location.state.previousurl)
             }
@@ -66,15 +78,16 @@ export default function Login({socket}) {
                 navigate(location.state.previousurl)
             }
             else if (location.state.previousurl==='/Draft'){
-                socket.emit('join', { team_name: selectedOption.value });
-                localStorage.setItem('teamname',selectedOption.value)
+                joinActivities(selectedOption.value)
+
+
                 navigate(location.state.previousurl)
             }      
         }
         else{
             if (location.state.previousurl==='/Draft'){
-                socket.emit('join', { team_name: selectedOption.value });
-                localStorage.setItem('teamname',selectedOption.value)
+                joinActivities(selectedOption.value)
+
                 navigate(location.state.previousurl)
             }
         }
