@@ -5,10 +5,10 @@ import './style.css';
 import settings from './settings.json'
 
 export default function 
-Auction({socket}) {
-  const [timer, setTimer] = useState(20)
+Auction() {
+  const [timer, setTimer] = useState(10)
   const timerId = useRef()
-  /*
+
   useEffect(() => {
     timerId.current = setInterval(() => {
             setTimer(timer => timer - 1)
@@ -20,33 +20,11 @@ Auction({socket}) {
         if (timer <= 0) {
             clearInterval(timerId.current)
         }
-    }, [timer])*/
-
-    
-  const [remainingTime, setRemainingTime] = useState(20);
-  const [intervalId, setIntervalId] = useState(null);
-
-
-  const handleStartTimer = () => {
-    socket.emit('start_timer');
-  };
-  const handleRestartTimer = () => {
-    socket.emit('restart_timer');
-  };
-
-  const handleStopTimer = () => {
-    socket.emit('stop_timer');
-    clearInterval(intervalId);
-  };
-
-  const handleGetTime = () => {
-    socket.emit('get_time');
-  };
+    }, [timer])
 
   const [selectedButton, setSelectedButton] = useState(null);
   const [bidder, setBidder] = useState('');
   const [amount, setAmount] = useState(20);
-  const [message, setMessage] = useState('');
   
   const sample = {
     "_id":{"$oid":"63b90a44f4902c26b5359388"},
@@ -79,7 +57,7 @@ Auction({socket}) {
  async function getOwnersData(prop)
   {
     try {
-      const response = await fetch('http://localhost:5001/getallownersdata');
+      const response = await fetch('https://efl2023.azurewebsites.net/getallownersdata');
       if(response.ok){
         const json = await response.json();
         setOwnersData(json)
@@ -88,7 +66,7 @@ Auction({socket}) {
           return acc;
       }, {});
       const disableMapTemp = json.reduce((map, curr) => {
-        console.log('CURR',curr);
+        //console.log('CURR',curr);
         // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
         // set disable to true
         if(curr.totalCount===settings.squadSize||(curr.fCount===6 && prop !== 'India')||curr.maxBid<amount)
@@ -97,9 +75,9 @@ Auction({socket}) {
         }
         return map;
     }, {});
-    console.log(disableMapTemp);
+    //console.log(disableMapTemp);
     setDisableMap(disableMapTemp);
-        console.log(data)
+        //console.log(data)
         setOwnerToMaxBid(data)
      } else {
        console.log('Error: ' + response.status + response.body);
@@ -109,49 +87,11 @@ Auction({socket}) {
     }
   }
 
-  
-  useEffect(() => {
-
-    const handleDisconnect = () => {
-      console.log("Disconnected from socket server.");
-    };
-
-    const handleNextPlayer = (data) => {
-      //setNextPlayer([data]);
-      actionsAfterGetPlayer(data);
-      handleStartTimer();
-      handleGetTime()
-    };
-
-    
-
-
-    socket.on("disconnect", handleDisconnect);
-    socket.on("getplayer", handleNextPlayer);
-    socket.on("getspecificplayer", handleNextPlayer);
-    socket.on('timer_started', () => {
-      setIntervalId(setInterval(handleGetTime, 1000));
-    });
-  
-    socket.on('timer_update', (remainingTime) => {
-      setRemainingTime(Math.max(remainingTime, 0));
-    });
-  
-    //handlemessage()
-
-    return () => {
-      socket.off("disconnect", handleDisconnect);
-      socket.off("getplayer", handleNextPlayer);
-    };
-  }, [socket, getRandom]);
-
-
-
   const handleClick = async () => {
     if(requestedPlayer!=="")
     {
-      /*try{
-      const response = await fetch('https://testefl2023.azurewebsites.net/getspecificplayer/'+requestedPlayer);
+      try{
+      const response = await fetch('https://efl2023.azurewebsites.net/getspecificplayer/'+requestedPlayer);
       if(response.ok)
       {
         const json = await response.json();
@@ -164,14 +104,11 @@ Auction({socket}) {
       }catch (error) {
         console.error(error);
       }
-      return*/
-      socket.emit('getspecificplayer', { playername: requestedPlayer });
+      return
       
     }
-    //Commenting below code to add socket code
-    /*
     try {
-      const response = await fetch('https://testefl2023.azurewebsites.net/getplayer');
+      const response = await fetch('https://efl2023.azurewebsites.net/getplayer');
       if(response.ok){
         const json = await response.json();
         actionsAfterGetPlayer(json);
@@ -180,14 +117,8 @@ Auction({socket}) {
      }
     } catch (error) {
       console.error(error);
-    }*/
-    else{
-      socket.emit("getplayer");
     }
-    
   };
-
-  
   const buttonTexts = settings.setup.teamNames;
   
 
@@ -195,23 +126,17 @@ Auction({socket}) {
    
     const payload = { ownerTeam: inBidder , status: inStatus, boughtFor: inAmount, role: getRandom.role, country: getRandom.country };
     console.log(inStatus,inBidder,inAmount)
-    const handlemessage = (message) =>{
-      socket.emit('message', message);
-    }
-  
     if (inStatus === 'sold')
     {
       setIsSold(true)
       setButtonSold(true)
-      handlemessage('SOLD')
     }
     else
     {
       setIsunSold(true)
       setButtonUnSold(true)
-      handlemessage('UNSOLD')
     }
-    fetch('https://testefl2023.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
+    fetch('https://efl2023.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
@@ -226,10 +151,6 @@ Auction({socket}) {
       console.error(error);
     });
     setFlag(false)
-    handleStopTimer()
-    socket.on('timer_stopped', () => {
-      clearInterval(intervalId);
-    });
   }
   const [firstClick,setFirstClick] = useState(true)
 
@@ -238,7 +159,7 @@ Auction({socket}) {
     setAmount(json.eflBase);
     setBidder('');
     setSelectedButton(null);
-    setTimer(20);
+    setTimer(10);
     setFlag(true);
     setFirstClick(true);
     setIsSold(false);
@@ -266,7 +187,7 @@ Auction({socket}) {
     }
     setAmount(amount+increment)
     const disableMapTemp = ownersData.reduce((map, curr) => {
-      console.log('CURR',curr);
+      //console.log('CURR',curr);
       // if squad is full or foreigner count is 6 or current amount is greater than maxBid for owner
       // set disable to true
       if(curr.totalCount===settings.squadSize||(curr.fCount===6 && playercountry !== 'India')||curr.maxBid<amount)
@@ -275,7 +196,7 @@ Auction({socket}) {
       }
       return map;
   }, {});
-  console.log(disableMapTemp);
+  //console.log(disableMapTemp);
   setDisableMap(disableMapTemp);
   }
 /*
@@ -339,7 +260,6 @@ const handleSetup = () =>
           </div>
       </div>
         <div className="top-row-item" style={{position:"relative",marginTop:"15px"}}>
-           { console.log(getRandom.type)}
          <PlayerCard playerName={getRandom.name}
          country={getRandom.country} 
          intro1={getRandom.intro[0]}
@@ -372,9 +292,9 @@ const handleSetup = () =>
          </div>
         </div>
       </div>
-      <div style={{display: "flex",position:"relative",bottom:"-30px",left:"95px",color: remainingTime.toFixed(0) <= 5 ? 'red':'black' }}>
+      <div style={{display: "flex",position:"relative",bottom:"-30px",left:"95px",color: timer <= '5' ? 'red':'black' }}>
         {isflag &&(
-          <div className="time-text show">Time Remaining: {remainingTime.toFixed(0)}</div>) }
+          <div className="time-text show">Time Remaining: {timer}</div>) }
       </div>
       <div>
         {isSold && <div className="sold-text show">SOLD</div>}
@@ -389,7 +309,7 @@ const handleSetup = () =>
         <div key={index} className="container-for-team">
           <img src={require('./auction_hand.png')} alt="my-image" className="my-image" style={{ display: selectedButton === index ? 'block' : 'none'}}/>
           <button id= {text} disabled={disableMap[text]} onClick={() => {setSelectedButton(index)
-          setBidder(text); increaseAmount(getRandom.country);setTimer(20)}} className={`${disableMap[text] ? "button-disabled" : "my-button teamButton"}`}>{text}</button>
+          setBidder(text); increaseAmount(getRandom.country);setTimer(10)}} className={`${disableMap[text] ? "button-disabled" : "my-button teamButton"}`}>{text}</button>
       
         </div>
       ))}
