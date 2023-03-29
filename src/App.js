@@ -5,9 +5,8 @@ import Auction from './Auction';
 import Teams from './Teams';
 import Dailyscore from './Dailyscore';
 import Login from './Login';
-//import SetupTeams from './SetupTeams';
+import SetupTeams from './SetupTeams';
 import ManageTeams from './ManageTeams';
-import SubstitutePlayers from './SubstitutePlayers'
 import { Route, Routes, useNavigate } from 'react-router-dom'
 
 export default function App() {
@@ -75,18 +74,18 @@ export default function App() {
   const navigateToDailyScore = () => {
     window.location.href = `${process.env.PUBLIC_URL}/#/daily`;
   };
-  /*
+  
   const navigateToSetupTeams = () => {
     //window.location.href = `${process.env.PUBLIC_URL}/#/login`;
     navigate('/login',{state:{previousurl:'/SetupTeams'}})
 
-  }*/
-
+  
+  /*
   const navigateSubstitutePlayer = () => {
     //window.location.href = `${process.env.PUBLIC_URL}/#/login`;
     navigate('/login',{state:{previousurl:'/SubstitutePlayers'}})
 
-  }
+  }*/
 
   const navigateToManageTeams =() =>{
     navigate('/login',{state:{previousurl:'/ManageTeams'}})
@@ -100,7 +99,7 @@ console.log(showButtons)
           <button className="mainButton" onClick={navigateToOwners}>Owner Teams</button>
           <button className="mainButton" onClick={navigateToDailyScore}>Daily Score</button>
           {false && <button className="mainButton" onClick={navigateToManageTeams}>Manage Teams</button>}
-          {showButtons && <button className="mainButton" onClick={navigateSubstitutePlayer}>Substitute</button>}
+          {showButtons && <button className="mainButton" onClick={navigateToSetupTeams}>Setup Teams</button>}
         </div>
         <Routes>
           <Route path="/" element={<h1 style={{color:"black",fontSize:"300%",left:"50%"}}>Welcome To EFL 2023</h1>} />
@@ -109,7 +108,7 @@ console.log(showButtons)
           <Route path="/owners" element={<Teams />} />
           <Route path="/daily" element={<Dailyscore />} />
           <Route path="/auction" element={<Auction />} />
-          <Route path="/SubstitutePlayers" element={<SubstitutePlayers />} />
+          <Route path="/SetupTeams" element={<SetupTeams />} />
           <Route path="/ManageTeams" element={<ManageTeams />}/>
         </Routes>
     </div>
