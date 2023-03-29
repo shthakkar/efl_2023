@@ -58,7 +58,7 @@ export default function ManageTeams() {
   useEffect(() => {
     async function getallsoldplayers(){
       try {
-        const response = await fetch('https://testefl2023.azurewebsites.net/getallsoldplayers');
+        const response = await fetch('https://efl2023.azurewebsites.net/getallsoldplayers');
         if(response.ok){
           const soldplayerlist = await response.json();
           //console.log(data)
@@ -93,7 +93,7 @@ export default function ManageTeams() {
      const Deleteplayer =() =>{
         const player = GetPlayer
         const payload = { ownerTeam: player[0].ownerTeam ,status: "unsold",boughtFor:player[0].boughtFor,role:player[0].role,country:player[0].country};
-        fetch('https://testefl2023.azurewebsites.net/deleteplayer/'+player[0]._id.$oid, {
+        fetch('https://efl2023.azurewebsites.net/deleteplayer/'+player[0]._id.$oid, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
