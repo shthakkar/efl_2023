@@ -6,10 +6,11 @@ import { createTheme } from "react-data-table-component";
 
 export default function Teams() {
   const [Playerslist, setPlayerslist] = useState([]);
+  const [Teamsstats, setTeamsstats] = useState([])
   
   createTheme('dark', {
     background: {
-      default: '#4682B4',
+      default: '#00BFFF',
     },
   });
 
@@ -62,7 +63,7 @@ export default function Teams() {
   useEffect(() => {
     async function getallsoldteamplayers(){
       try {
-        const response = await fetch('https://testefl2023.azurewebsites.net/getallsoldplayers');
+        const response = await fetch('https://efl2023.azurewebsites.net/getallsoldplayers');
         if(response.ok){
           const playerlist = await response.json();
           //console.log(data)
@@ -77,6 +78,25 @@ export default function Teams() {
     getallsoldteamplayers();
   }, [])
 
+
+  useEffect(() => {
+    async function getallteamspurse(){
+      try {
+        const response = await fetch('https://efl2023.azurewebsites.net/getallownersdata');
+        if(response.ok){
+          const stats = await response.json();
+          //console.log(data)
+          setTeamsstats(stats);
+        } else {
+          console.log('Error: ' + response.status + response.body);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    getallteamspurse();
+  }, [])
+
   const teamsData = Playerslist.reduce((acc, player) => {
     if (!acc[player.ownerTeam]) {
       acc[player.ownerTeam] = [];
@@ -85,13 +105,21 @@ export default function Teams() {
     return acc;
   }, {});
 
+  const teampurse = Teamsstats.reduce((tcc, teams) => {
+    if (!tcc[teams.ownerName]) {
+      tcc[teams.ownerName] = teams.currentPurse;
+    }
+    return tcc;
+  }, {});
+
   const data = [];
   
   for (const [teamName, players] of Object.entries(teamsData)) {
     const team = {
       teamName: teamName,
       players: players,
-      sqaudsize:players.length
+      sqaudsize:players.length,
+      purse:teampurse[teamName]
     };
     data.push(team);
   }
@@ -145,6 +173,7 @@ export default function Teams() {
           name: 'Team',
           sortable: true,
         },
+        { selector: row => row['purse'], name: 'RemainingPurse' , sortable: true},
         { selector: row => row['sqaudsize'], name: 'SqaudSize' , sortable: true},
       ];
   
