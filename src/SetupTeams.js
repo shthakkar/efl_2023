@@ -3,7 +3,7 @@ import settings from './settings.json'
 
 export default function SetupTeams(){
 
-    fetch('https://testefl2023.azurewebsites.net/setup', {
+    fetch('https://efl2023.azurewebsites.net/setup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
