@@ -62,7 +62,7 @@ export default function Dailyscore() {
   useEffect(() => {
     async function getallsoldplayers(){
       try {
-        const response = await fetch('https://testefl2023.azurewebsites.net/getallsoldplayers');
+        const response = await fetch('https://efl2023.azurewebsites.net/getallsoldplayers');
         if(response.ok){
           const data = await response.json();
           //console.log(data)
@@ -80,7 +80,7 @@ export default function Dailyscore() {
   useEffect(() => {
     async function getallteampoints(){
       try {
-        const response = await fetch('https://testefl2023.azurewebsites.net/getallownersdata');
+        const response = await fetch('https://efl2023.azurewebsites.net/getallownersdata');
         if(response.ok){
           const stats = await response.json();
           //console.log(data)
