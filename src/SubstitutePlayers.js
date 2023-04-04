@@ -183,7 +183,8 @@ const handleReplace = () => {
   let formattedDate = currentDate.toDateString();
   setDisableButton(true)
 
-  const payload = { inPlayer: playertobereplacedwith.name , outPlayer: playertobereplaced.name, replacementDate: formattedDate, pointsToDeduct: playertobereplacedwith.points };
+  const payload = { inPlayer: playertobereplacedwith.name ,inPlayerrole:playertobereplacedwith.role,inPlayernationality:playertobereplacedwith.country, outPlayer: playertobereplaced.name,outPlayerrole:playertobereplaced.role,outPlayernationality:playertobereplaced.country,
+     replacementDate: formattedDate, pointsToDeduct: playertobereplacedwith.points };
  
   fetch('http://localhost:5000/replaceplayer/'+specificteamsdata._id.$oid, {
       method: 'PUT',
