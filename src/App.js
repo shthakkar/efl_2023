@@ -17,6 +17,8 @@ export default function App() {
   const navigate = useNavigate()
   const [ipAddress, setIpAddress] = useState('');
   const [showButtons, setShowButtons] = useState(false);
+  
+  const isMobile = window.innerWidth <= 600;
 
   useEffect(() => {
     fetch('https://api.ipify.org?format=json')
@@ -74,7 +76,12 @@ export default function App() {
     window.location.href = `${process.env.PUBLIC_URL}/#/owners`;
   };
   const navigateToDailyScore = () => {
-    window.location.href = `${process.env.PUBLIC_URL}/#/daily`;
+    if(isMobile){
+      window.location.href = `${process.env.PUBLIC_URL}/#/daily`;
+    }
+    else{
+      window.location.href = `${process.env.PUBLIC_URL}/#/dailydashboard`;
+    }
   };
   /*
   const navigateToSetupTeams = () => {
@@ -108,10 +115,11 @@ console.log(showButtons)
           <Route path="/players" element={<AllPlayers />} />
           <Route path="/login" element={<Login />} />
           <Route path="/owners" element={<Teams />} />
-          <Route path="/daily" element={<Dashboard />} />
+          <Route path="/daily" element={<Dailyscore />} />
           <Route path="/auction" element={<Auction />} />
           <Route path="/SubstitutePlayers" element={<SubstitutePlayers />} />
           <Route path="/ManageTeams" element={<ManageTeams />}/>
+          <Route path="/dailydashboard" element={<Dashboard />} />
         </Routes>
     </div>
   );
