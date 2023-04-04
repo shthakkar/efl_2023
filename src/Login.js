@@ -21,7 +21,10 @@ export default function Login() {
             }
             else if (location.state.previousurl==='/ManageTeams'){
                 navigate(location.state.previousurl)
-            }   
+            }
+            else if (location.state.previousurl==='/SubstitutePlayers'){
+                navigate(location.state.previousurl)
+            } 
 
         }
     }
