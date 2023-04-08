@@ -2,10 +2,14 @@ import React, { useState, useEffect} from "react";
 import './style.css';
 import DataTable from 'react-data-table-component';
 import { createTheme } from "react-data-table-component";
+import Linechart from "./Linechart";
 
 export default function Dailyscore() {
   const [Playersownerslist, setPlayerownersslist] = useState([]);
   const [Teamsstats, setTeamsstats] = useState([])
+  const [timsestamps, setTimestamps] = useState([]);
+
+  const baseURL = process.env.REACT_APP_BASE_URL;
 
   createTheme('dark', {
     background: {
@@ -62,7 +66,7 @@ export default function Dailyscore() {
   useEffect(() => {
     async function getallsoldplayers(){
       try {
-        const response = await fetch('https://efl2023.azurewebsites.net/getallsoldplayers');
+        const response = await fetch(baseURL+'/getallsoldplayers');
         if(response.ok){
           const data = await response.json();
           //console.log(data)
@@ -80,7 +84,7 @@ export default function Dailyscore() {
   useEffect(() => {
     async function getallteampoints(){
       try {
-        const response = await fetch('https://efl2023.azurewebsites.net/getallownersdata');
+        const response = await fetch(baseURL+'/getallownersdata');
         if(response.ok){
           const stats = await response.json();
           //console.log(data)
@@ -93,6 +97,24 @@ export default function Dailyscore() {
       }
     }
     getallteampoints();
+  }, [])
+
+
+  useEffect(() => {
+    async function gettimestamps(){
+      try {
+        const response = await fetch(baseURL+'/gettimestamps');
+        if(response.ok){
+          const data = await response.json();
+          setTimestamps(data);
+        } else {
+          console.log('Error: ' + response.status + response.body);
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    gettimestamps();
   }, [])
 
   const teamData = Playersownerslist.reduce((acc, player) => {
@@ -157,7 +179,7 @@ export default function Dailyscore() {
       return (
         <div>
           <DataTable
-            title={`Players for ${team.teamName}`}
+            title={`Players for ${team.teamName} points updated at ${timsestamps[0].pointsUpdatedAt}`}
             data={team.players}
             columns={playerColumns}
             defaultSortFieldId = "points"
@@ -173,8 +195,10 @@ export default function Dailyscore() {
     }
   
     return (
-    <div style={{fontSize: '20px',fontWeight: 'Bold',color: 'black',textAlign:'center'}}>
-          <h2>LeaderBoard</h2>
+      <div>
+      {timsestamps[0] &&
+      <div style={{fontSize: '20px',fontWeight: 'Bold',color: 'black',textAlign:'center'}}>
+          <h2>LeaderBoard updated at {timsestamps[0].pointsUpdatedAt}</h2>
         <DataTable
             data={teams}
             columns={columns}
@@ -189,6 +213,12 @@ export default function Dailyscore() {
             theme="dark"
             
         />
+    </div>}
+      <div className="chart">
+        <h2>Standings Chart</h2>
+        <h2>check desktop page</h2>
+        {/*Teamsstats.length > 0 && <Linechart/>*/}
+      </div>
     </div>
     )
   };
