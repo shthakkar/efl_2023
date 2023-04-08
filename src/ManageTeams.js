@@ -7,6 +7,8 @@ import { createTheme } from "react-data-table-component";
 export default function ManageTeams() {
   const [SoldPlayerslist, setSoldPlayerslist] = useState([]);
   const [GetPlayer, setPlayer] = useState();
+
+  const baseURL = process.env.REACT_APP_BASE_URL;
   
   createTheme('solarized', {
     text: {
@@ -58,7 +60,7 @@ export default function ManageTeams() {
   useEffect(() => {
     async function getallsoldplayers(){
       try {
-        const response = await fetch('https://efl2023.azurewebsites.net/getallsoldplayers');
+        const response = await fetch(baseURL+'/getallsoldplayers');
         if(response.ok){
           const soldplayerlist = await response.json();
           //console.log(data)
@@ -93,7 +95,7 @@ export default function ManageTeams() {
      const Deleteplayer =() =>{
         const player = GetPlayer
         const payload = { ownerTeam: player[0].ownerTeam ,status: "unsold",boughtFor:player[0].boughtFor,role:player[0].role,country:player[0].country};
-        fetch('https://efl2023.azurewebsites.net/deleteplayer/'+player[0]._id.$oid, {
+        fetch(baseURL+'/deleteplayer/'+player[0]._id.$oid, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
