@@ -9,6 +9,8 @@ Auction() {
   const [timer, setTimer] = useState(10)
   const timerId = useRef()
 
+  const baseURL = process.env.REACT_APP_BASE_URL;
+
   useEffect(() => {
     timerId.current = setInterval(() => {
             setTimer(timer => timer - 1)
@@ -57,7 +59,7 @@ Auction() {
  async function getOwnersData(prop)
   {
     try {
-      const response = await fetch('https://efl2023.azurewebsites.net/getallownersdata');
+      const response = await fetch(baseURL+'/getallownersdata');
       if(response.ok){
         const json = await response.json();
         setOwnersData(json)
@@ -91,7 +93,7 @@ Auction() {
     if(requestedPlayer!=="")
     {
       try{
-      const response = await fetch('https://efl2023.azurewebsites.net/getspecificplayer/'+requestedPlayer);
+      const response = await fetch(baseURL+'/getspecificplayer/'+requestedPlayer);
       if(response.ok)
       {
         const json = await response.json();
@@ -108,7 +110,7 @@ Auction() {
       
     }
     try {
-      const response = await fetch('https://efl2023.azurewebsites.net/getplayer');
+      const response = await fetch(baseURL+'/getplayer');
       if(response.ok){
         const json = await response.json();
         actionsAfterGetPlayer(json);
@@ -136,7 +138,7 @@ Auction() {
       setIsunSold(true)
       setButtonUnSold(true)
     }
-    fetch('https://efl2023.azurewebsites.net/updateplayer/'+getRandom._id.$oid, {
+    fetch(baseURL+'/updateplayer/'+getRandom._id.$oid, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
