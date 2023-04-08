@@ -50,7 +50,7 @@ import {
         padding: theme.spacing(2),
         textAlign: "center",
         width:"45%",
-        //overflowX: "auto",
+        overflowX: "auto",
       },
       tableContainer: {
         height: "100%",
@@ -80,14 +80,15 @@ import {
     const [selectedTeam, setSelectedTeam] = useState(null);
     const [playerData, setPlayerData] = useState([]);
     const [teamData, setTeamData] = useState([]);
-  
+    const [timsestamps, setTimestamps] = useState([]);
    
+    const baseURL = process.env.REACT_APP_BASE_URL;
     
   
     useEffect(() => {
       async function getallsoldplayers(){
         try {
-          const response = await fetch('https://efl2023.azurewebsites.net/getallsoldplayers');
+          const response = await fetch(baseURL+'/getallsoldplayers');
           if(response.ok){
             const data = await response.json();
             setPlayerData(data);
@@ -104,7 +105,7 @@ import {
     useEffect(() => {
       async function getallteampoints(){
         try {
-          const response = await fetch('https://efl2023.azurewebsites.net/getallownersdata');
+          const response = await fetch(baseURL+'/getallownersdata');
           if(response.ok){
             const stats = await response.json();
             setTeamData(stats);
@@ -116,6 +117,24 @@ import {
         }
       }
       getallteampoints();
+    }, [])
+
+
+    useEffect(() => {
+      async function gettimestamps(){
+        try {
+          const response = await fetch(baseURL+'/gettimestamps');
+          if(response.ok){
+            const data = await response.json();
+            setTimestamps(data);
+          } else {
+            console.log('Error: ' + response.status + response.body);
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      }
+      gettimestamps();
     }, [])
   
     //const teamDataWithIndex = teamData.map((team, index) => ({ ...team, index: index + 1 }));
@@ -132,11 +151,12 @@ import {
   
     return (
         <ThemeProvider theme={theme}>
-          <Box container className={classes.root}>
+          {timsestamps[0] &&
+          <Box className={classes.root}>
             {/* Standings */}
-              <Box className={classes.standingsBox}>
+            <Box className={classes.standingsBox}>
                 <Typography variant="h6" gutterBottom>
-                  Standings
+                  Standings updated at {timsestamps[0].pointsUpdatedAt}
                 </Typography>
                 <TableContainer className={classes.tableContainer} component={Paper}>
                   <div className="ag-theme-alpine" style={{ height: "70%", width: "100%" }}>
@@ -151,7 +171,7 @@ import {
                     />
                   </div>
                   <Typography variant="subtitle1" gutterBottom>
-                  Trends
+                  Trends updated at{timsestamps[0].rankingsUpdatedAt}
                 </Typography>
                   <div className="ag-theme-alpine" style={{ height: "70%", width: "100%" }}>
                     <AgGridReact
@@ -198,10 +218,10 @@ import {
 
                 {/* Side panel */}
               {selectedTeam && (
-                <Box className={classes.sidePanel}>
+                 <Box className={classes.sidePanel}>
                   <Box display="flex" justifyContent="space-between" alignItems="center">
                     <Typography variant="h6" gutterBottom>
-                      {selectedTeam.ownerName} Players
+                      {selectedTeam.ownerName} Players points updated at {timsestamps[0].pointsUpdatedAt}
                     </Typography>
                     <IconButton onClick={() => setSelectedTeam(null)}>
                       <CloseIcon />
@@ -221,14 +241,13 @@ import {
 
                 
             {/* Chart */}
-              <Box className={classes.chartBox}>
+              <Box className={classes.chartBox}>  
                 <Typography variant="h6" gutterBottom>
                   Standings Chart
                 </Typography>
-               { /*<LineChart />*/}
-               <h1 style={{ height: "100%", width: "100%" }}>Coming Soon</h1>
+               { <Linechart />}
               </Box>
-              </Box>
+              </Box>}
         </ThemeProvider>
       );
     }      
