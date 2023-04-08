@@ -7,6 +7,9 @@ import { createTheme } from "react-data-table-component";
 export default function Teams() {
   const [Playerslist, setPlayerslist] = useState([]);
   const [Teamsstats, setTeamsstats] = useState([])
+
+  const baseURL = process.env.REACT_APP_BASE_URL;
+
   
   createTheme('dark', {
     background: {
@@ -63,7 +66,7 @@ export default function Teams() {
   useEffect(() => {
     async function getallsoldteamplayers(){
       try {
-        const response = await fetch('https://efl2023.azurewebsites.net/getallsoldplayers');
+        const response = await fetch(baseURL+'/getallsoldplayers');
         if(response.ok){
           const playerlist = await response.json();
           //console.log(data)
@@ -82,7 +85,7 @@ export default function Teams() {
   useEffect(() => {
     async function getallteamspurse(){
       try {
-        const response = await fetch('https://efl2023.azurewebsites.net/getallownersdata');
+        const response = await fetch(baseURL+'/getallownersdata');
         if(response.ok){
           const stats = await response.json();
           //console.log(data)
