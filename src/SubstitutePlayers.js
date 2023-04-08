@@ -72,7 +72,7 @@ export default function SubstitutePlayers() {
   const [disablebutton, setDisableButton] = useState(true)
 
   
-
+  const baseURL = process.env.REACT_APP_BASE_URL;
 
 const columnDefs = [
   { headerName: 'Select', field: 'checkboxSelection', checkboxSelection: true, width:20 },
@@ -129,7 +129,7 @@ const gridOptions1 = {
     async function getallplayerslist() {
       try {
         const response = await fetch(
-          'http://localhost:5000/getallplayers'
+          baseURL+'/getallplayers'
         );
         if (response.ok) {
           const data = await response.json();
@@ -151,7 +151,7 @@ const gridOptions1 = {
   useEffect(() => {
     async function getallteampoints(){
       try {
-        const response = await fetch('http://localhost:5000/getallownersdata');
+        const response = await fetch(baseURL+'/getallownersdata');
         if(response.ok){
           const stats = await response.json();
           setTeamsData(stats);
@@ -186,7 +186,7 @@ const handleReplace = () => {
   const payload = { inPlayer: playertobereplacedwith.name ,inPlayerrole:playertobereplacedwith.role,inPlayernationality:playertobereplacedwith.country, outPlayer: playertobereplaced.name,outPlayerrole:playertobereplaced.role,outPlayernationality:playertobereplaced.country,
      replacementDate: formattedDate, pointsToDeduct: playertobereplacedwith.points };
  
-  fetch('http://localhost:5000/replaceplayer/'+specificteamsdata._id.$oid, {
+  fetch(baseURL+'/replaceplayer/'+specificteamsdata._id.$oid, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'
