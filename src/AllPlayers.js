@@ -12,11 +12,13 @@ export default function AllPlayers() {
   const [soldPlayers, setSoldPlayers] = useState([]);
   const containerStyle = useMemo(() => ({ width: '100%', height: '100%' }), []);
 
+  const baseURL = process.env.REACT_APP_BASE_URL;
+
   useEffect(() => {
     async function getallplayerslist() {
       try {
         const response = await fetch(
-          'https://efl2023.azurewebsites.net/getallplayers'
+          baseURL+'/getallplayers'
         );
         if (response.ok) {
           const data = await response.json();
