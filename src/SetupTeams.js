@@ -3,7 +3,9 @@ import settings from './settings.json'
 
 export default function SetupTeams(){
 
-    fetch('https://efl2023.azurewebsites.net/setup', {
+  const baseURL = process.env.REACT_APP_BASE_URL;
+
+    fetch(baseURL+'/setup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
